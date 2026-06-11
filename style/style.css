@@ -62,8 +62,8 @@
 
     .nav-brand span {
       display: inline-block;
-      width: 200px;
-      height: 54px;
+      width: 150px;
+      height: 40px;
       background: var(--blue-600);
       border-radius: 6px;
       display: flex;
@@ -73,7 +73,7 @@
 
     .nav-brand span i {
       font-size: 16px;
-      color: #fff;
+      color: #fff
     }
 
     .nav-links {
@@ -693,7 +693,7 @@
       border: none;
       outline: none;
       color: var(--text-secondary);
-      padding: 14px 16px;
+      padding: 12px 16px;
       background-color: inherit;
       font-family: inherit;
       margin: 0;
@@ -723,9 +723,9 @@
     .dropdown:hover .dropbtn {
       background: var(--blue-600);
       color: #fff !important;
-      padding: 12px 18px;
+      padding: 12px 16px;
       border-radius: 6px;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 500;
       text-decoration: none;
     }

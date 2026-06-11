@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Si BCS — Azure Cloud &amp; Data Solutions</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="../style/style.css">
+  <script src="../script/script.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" class="nav-brand">
+      <span><img src="../images/si_bcs_logo_small.png" alt="Si BCS" style="width:200px;height:54px;"
+          float="right"></span>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <div id="dropdown" class="dropdown" onclick="openNav()">
+        <button id="dropdown-btn" class="dropbtn">Services
+          <i class="ti ti-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="#azure-services" onclick=closeNav()>Azure Services &amp; Management</a>
+          <a href="#data-services">Data Services, Management &amp; Governernance</a>
+          <a href="#sap-bpc">SAP BPC Technical Services</a>
+        </div>
+      </div>
+      <a href="#process">How we work</a>
+      <a href="#why">Why us</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <!--  <div class="badge"><i class="ti ti-rosette-discount-check"></i> You new Microsoft Azure Partner</div> -->
+    <h1>Azure Cloud &amp; Data Solutions <br> <em>built for your business</em></h1>
+    <p>From cloud readiness reviews to fully managed Azure environments Si BCS helps you migrate, optimise, and scale
+      with confidence.</p>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary"><i class="ti ti-mail"></i> Get in touch</a>
+      <a href="#azure-services" class="btn-secondary"><i class="ti ti-arrow-down"></i> Explore services</a>
+    </div>
+  </section>
+
+  <div class="trust-bar">
+    <div class="trust-item"><i class="ti ti-shield-check"></i> Microsoft Certified Consultants &amp; Engineers</div>
+    <div class="trust-item"><i class="ti ti-checks"></i> Managed Services</div>
+    <div class="trust-item"><i class="ti ti-building"></i> SME to Enterprise</div>
+    <div class="trust-item"><i class="ti ti-map-pin"></i> UK-based Team</div>
+  </div>
+
+  <div class="section" id="azure-services">
+    <div class="section-eyebrow">What we do</div>
+    <br>
+    <div class="section-title">Azure Services &amp; Management</div>
+    <p class="section-sub">Whether you're starting your cloud journey or looking to optimise an existing Azure estate,
+      we have a service to match.</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-code"></i></div>
+        <h3>Infrastructure as Code</h3>
+        <p>Reliable, repeatable Azure environments built with Terraform — version-controlled and audit-ready from day
+          one.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Pre-built Terraform templates</li>
+          <li><i class="ti ti-check"></i> CI/CD pipeline integration</li>
+          <li><i class="ti ti-check"></i> Policy-as-code enforcement</li>
+          <li><i class="ti ti-check"></i> Environment drift detection</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-settings-automation"></i></div>
+        <h3>Managed service</h3>
+        <p>Ongoing management of your Azure environment — monitoring, patching, cost governance, and hands-on support
+          included.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Azure Monitor &amp; alerting</li>
+          <li><i class="ti ti-check"></i> Patch management</li>
+          <li><i class="ti ti-check"></i> Cost optimisation</li>
+          <li><i class="ti ti-check"></i> Named engineer support</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-file-text-ai"></i></div>
+        <h3>AI Consultancy and Readiness</h3>
+        <p>Strategic AI advisory services to help assess readiness, identify opportunities, and
+          implement AI solutions.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Azure Copilot adoption</li>
+          <li><i class="ti ti-check"></i> M365 Copilot readiness review</li>
+          <li><i class="ti ti-check"></i> AI opportunity workshop</li>
+          <li><i class="ti ti-check"></i> AI policies and governance</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-clipboard-check"></i></div>
+        <h3>Cloud readiness review</h3>
+        <p>A structured assessment of your current infrastructure, security posture, and workloads — with a clear
+          migration roadmap.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Workload discovery &amp; sizing</li>
+          <li><i class="ti ti-check"></i> Security &amp; compliance gap analysis</li>
+          <li><i class="ti ti-check"></i> Cost modelling</li>
+          <li><i class="ti ti-check"></i> Prioritised roadmap report</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-arrow-back-up-double"></i></div>
+        <h3>Backup as a Service</h3>
+        <p>Fully managed Azure Backup covering VMs, databases, and file shares — with defined RPOs, RTOs, and regular
+          restore testing.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Azure Backup &amp; Site Recovery</li>
+          <li><i class="ti ti-check"></i> Geo-redundant storage</li>
+          <li><i class="ti ti-check"></i> Automated restore testing</li>
+          <li><i class="ti ti-check"></i> Compliance reporting</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-cloud"></i></div>
+        <h3>Azure consultancy</h3>
+        <p>Ad-hoc and project-based consultancy for architecture design, migrations, security hardening, and Azure
+          Landing Zone builds.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Landing Zone design</li>
+          <li><i class="ti ti-check"></i> Migration planning &amp; execution</li>
+          <li><i class="ti ti-check"></i> Security hardening</li>
+          <li><i class="ti ti-check"></i> Architecture reviews</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section" id="data-services">
+    <br><br>
+    <div class="section-title">Data Services, Management &amp; Governernance</div>
+    <p class="section-sub">Whether you're data is already in the cloud or your looking to modernise your data warehouse,
+      we have the expertise to ensure you make the right choice.</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-file-text-ai"></i></div>
+        <h3>Azure Foundry</h3>
+        <p>Accelerate AI innovation using Azure Foundry to develop, manage, and scale intelligent solutions across your
+          business.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> AI strategy development</li>
+          <li><i class="ti ti-check"></i> Scalable deployment</li>
+          <li><i class="ti ti-check"></i> Responsible AI governance</li>
+          <li><i class="ti ti-check"></i> Azure integration</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-timeline"></i></div>
+        <h3>Microsoft Fabric</h3>
+        <p>Harness Microsoft Fabric to unify your data, analytics, and reporting in a single platform to drive insight,
+          efficiency, and growth.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Data platform modernisation</li>
+          <li><i class="ti ti-check"></i> Unified analytics solution</li>
+          <li><i class="ti ti-check"></i> Real-time insights &amp; reporting</li>
+          <li><i class="ti ti-check"></i> Power BI integration</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-cloud-data-connection"></i></div>
+        <h3>Azure Data Factory</h3>
+        <p>Design and manage robust data pipelines that seamlessly connect, transform, and move data across your
+          organisation.</p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Data pipeline automation</li>
+          <li><i class="ti ti-check"></i> Data transformation services</li>
+          <li><i class="ti ti-check"></i> Multi-source integration</li>
+          <li><i class="ti ti-check"></i> Pipeline monitoring &amp; management</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="sap-bpc">
+    <br><br>
+    <div class="section-title">SAP BPC Technical Consultancy &amp; Advisory</div>
+    <p class="section-sub">Does you SAP BPC environment need a healthcheck? Is it not performing they way it used to.
+      Or are your servers in need or an upgrade? Our consultants have been working with SAP BPC for over 20 years.</p>
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-chart-bar"></i></div>
+        <h3>SAP BPC for Microsoft</h3>
+        <p>Is your business running the Microsoft version of SAP BPC and struggling to find a technical expert? </p>
+        <br>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Advisory services</li>
+          <li><i class="ti ti-check"></i> Technical reviews</li>
+          <li><i class="ti ti-check"></i> Troubleshooting and Performance Tuning</li>
+          <li><i class="ti ti-check"></i> SAP BPC, Windows Server &amp; SQL Upgrades</li>
+        </ul>
+      </div>
+
+      <div class="service-card">
+        <div class="service-icon"><i class="ti ti-chart-arrows-vertical"></i></div>
+        <h3>SAP BPC for S4/HANA</h3>
+        <p>Whether your SAP BPC for S4/HANA environment is in need of performance tuning, an upgrades or patching,
+          or a technical review to give you piece of mind.
+        </p>
+        <ul class="feature-list">
+          <li><i class="ti ti-check"></i> Advisory services</li>
+          <li><i class="ti ti-check"></i> Technical reviews</li>
+          <li><i class="ti ti-check"></i> Troubleshooting and Performance Tuning</li>
+          <li><i class="ti ti-check"></i> SAP BPC, Linux &amp; SAP HANA upgrades</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="process">
+    <br><br>
+    <div class="section-eyebrow">How we work</div>
+    <br>
+    <div class="section-title">A Clear, Structured Approach</div>
+    <p class="section-sub">We follow a proven four-step process so there are no surprises — just a well-delivered
+      outcome.</p>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">1</div>
+        <h4>Discover</h4>
+        <p>We assess your current environment, goals, and constraints.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">2</div>
+        <h4>Design</h4>
+        <p>Our consultants produce a tailored architecture and plan to meet your requirements.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">3</div>
+        <h4>Deliver</h4>
+        <p>We build and migrate using best practice, IaC (along with CI/CD) with minimal disruption.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">4</div>
+        <h4>Optimise</h4>
+        <p>We provide ongoing managed service, cost reviews, and continuous improvement.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section" id="why">
+    <div class="section-eyebrow">Why Si BCS</div>
+    <br>
+    <div class="section-title">What Sets Us Apart</div>
+    <div class="why-grid">
+      <div class="why-item">
+        <i class="ti ti-certificate"></i>
+        <h4>Microsoft certified</h4>
+        <p>Our Azure consultants hold current Azure Architect Expert certifications.</p>
+      </div>
+      <div class="why-item">
+        <i class="ti ti-eye"></i>
+        <h4>No black boxes</h4>
+        <p>Full documentation and access to everything we build — your environment, your ownership.</p>
+      </div>
+      <div class="why-item">
+        <i class="ti ti-coin"></i>
+        <h4>Cost accountability</h4>
+        <p>We flag waste, right-size resources, and include cost governance in every managed service.</p>
+      </div>
+      <div class="why-item">
+        <i class="ti ti-users"></i>
+        <h4>Dedicated team</h4>
+        <p>You'll work and be in contact with a named consultant. We'll know your environment inside out.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="cta-section" id="contact">
+    <div class="cta-inner">
+      <div class="section-eyebrow" style="text-align:center;">Get in touch</div>
+      <h2>Ready to talk Azure?</h2>
+      <p>Tell us a little about your project and we'll be in touch within one business day.</p>
+      <form class="contact-form" onsubmit="return false;">
+        <input type="text" placeholder="Your name" aria-label="Your name" required />
+        <input type="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" placeholder="Company name" aria-label="Company name" />
+        <select aria-label="Service of interest">
+          <option value="" disabled selected>Service of interest</option>
+          <option>Infrastructure as Code</option>
+          <option>AI</option>
+          <option>Backup as a Service</option>
+          <option>Managed service</option>
+          <option>Cloud readiness review</option>
+          <option>General Azure consultancy</option>
+          <option>Azure Foundry</option>
+          <option>Microsoft Fabric</option>
+          <option>Azure Factory</option>
+          <option>Other (or not sure)</option>
+        </select>
+        <textarea placeholder="Briefly describe what you're looking to achieve..."
+          aria-label="Project description"></textarea>
+        <button type="submit" class="submit-btn">Send message <i class="ti ti-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-brand">Si BCS Ltd.</span>
+    <span class="footer-copy">&copy; 2026 Si BCS Ltd. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="./privacy.html">Privacy policy</a>
+      <a href="./terms.html">Terms</a>
+      <a href="mailto:info@sibcs.co.uk">info@@sibcs.co.uk</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

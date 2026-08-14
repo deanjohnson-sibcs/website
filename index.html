@@ -17,20 +17,30 @@
 
   <nav>
     <a href="#" class="nav-brand">
-      <span><img src="./images/si_bcs_logo_small.png" alt="Si BCS" style="width:150px;height:40px;"
-          float="right"></span>
+      <span><img src="./images/logo.png" alt="Si BCS" style="width:150px;height:40px;" float="right"></span>
       <i class="ti ti-arrow-up" style="font-size: 1.50em;"></i>
     </a>
     <div class="nav-links">
       <a href="./index.html">Home</a>
       <div id="dropdown" class="dropdown" onclick="openNav()">
-        <button id="dropdown-btn" class="dropbtn">Services
+        <button id="dropdown-btn" class="dropbtn">What we do
           <i class="ti ti-caret-down"></i>
         </button>
         <div id="dropdown-content" class="dropdown-content">
           <a href="#azure-services">Azure Services &amp; Management</a>
           <a href="#data-services">Data Services, Management &amp; Governernance</a>
           <a href="#sap-bpc">SAP BPC Technical Services</a>
+        </div>
+      </div>
+      <div id="dropdown" class="dropdown" onclick="openNav()">
+        <button id="dropdown-btn" class="dropbtn"> Services
+          <i class="ti ti-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="./azure-consultancy.html">Azure Consultancy &amp Services</a>
+          <a href="./copilot-readiness.html">Copilot - SharePoint Readiness Review</a>
+          <a href="./fabric-powerbi.html"">Microsoft Fabric &amp; Power Bi</a>
+          <a href=" ./avd-nerdio.html">Microsoft AVD &amp; Nerdio</a>
         </div>
       </div>
       <a href="#process">How we work</a>
@@ -305,17 +315,20 @@
         <input type="email" placeholder="Work email" aria-label="Work email" required />
         <input type="text" placeholder="Company name" aria-label="Company name" />
         <select aria-label="Service of interest">
-          <option value="" disabled selected>Service of interest</option>
-          <option>Infrastructure as Code</option>
+          <option value="" disabled selected>Select service of interest</option>
+          <option>General Azure consultancy</option>
+          <option>Copilot readiness</option>
+          <option>Cloud readiness</option>
+          <option>Microsoft Fabric</option>
+          <option>Microsoft Power BI</option>
           <option>AI</option>
+          <option>Infrastructure as Code</option>
           <option>Backup as a Service</option>
           <option>Managed service</option>
-          <option>Cloud readiness review</option>
-          <option>General Azure consultancy</option>
           <option>Azure Foundry</option>
-          <option>Microsoft Fabric</option>
           <option>Azure Factory</option>
-          <option>Other (or not sure)</option>
+          <option>SAP EPM</option>
+          <option>Other / Multiple</option>
         </select>
         <textarea placeholder="Briefly describe what you're looking to achieve..."
           aria-label="Project description"></textarea>

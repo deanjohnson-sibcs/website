@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Fabric &amp; Power BI — CloudPath</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+  <link rel="stylesheet" href="./style/style2.css">
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="./script/script.js"></script>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#" class="nav-brand">
+      <span><img src="./images/logo.png" alt="Si BCS" style="width:150px;height:40px;" float="right"></span>
+      <i class="ti ti-arrow-up" style="font-size: 1.50em;"></i>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html">Home</a>
+      <div id="dropdown" class="dropdown" onclick="openNav()">
+        <button id="dropdown-btn" class="dropbtn">What we do
+          <i class="ti ti-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="#azure-services">Azure Services &amp; Management</a>
+          <a href="#data-services">Data Services, Management &amp; Governernance</a>
+          <a href="#sap-bpc">SAP BPC Technical Services</a>
+        </div>
+      </div>
+      <div id="dropdown" class="dropdown" onclick="openNav()">
+        <button id="dropdown-btn" class="dropbtn"> Services
+          <i class="ti ti-caret-down"></i>
+        </button>
+        <div id="dropdown-content" class="dropdown-content">
+          <a href="./azure-consultancy.html">Azure Consultancy &amp Services</a>
+          <a href="./copilot-readiness.html">Copilot - SharePoint Readiness Review</a>
+          <a href="./fabric-powerbi.html"">Microsoft Fabric &amp; Power Bi</a>
+          <a href="./avd-nerdio.html">Microsoft AVD &amp; Nerdio</a>
+        </div>
+      </div>
+      <a href="#process">How we work</a>
+      <a href="#why">Why us</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-badges">
+          <div class="hero-badge"><i class="ti ti-diamond"></i> Microsoft Fabric - <i class="ti ti-chart-bar"></i> Power
+            BI</div>
+        </div>
+        <h1>One platform for your data.<br /><em>Decisions powered by AI.</em></h1>
+        <p>Microsoft Fabric and Power BI bring your data together in one place — from raw sources through to AI-powered
+          reports your whole organisation can trust and use.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary"><i class="ti ti-mail"></i> Get in touch</a>
+        </div>
+      </div>
+      <div class="hero-stat-stack">
+        <div class="stat-pill">
+          <span class="num">1</span>
+          <span class="lbl">unified platform — no more data silos</span>
+        </div>
+        <div class="stat-pill">
+          <span class="num">AI</span>
+          <span class="lbl">built in to every layer, from data to report</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust bar -->
+  <div class="trust-bar">
+    <div class="trust-item"><i class="ti ti-certificate"></i> Microsoft certified engineers</div>
+    <div class="trust-item"><i class="ti ti-database"></i> End-to-end data expertise</div>
+    <div class="trust-item"><i class="ti ti-eye"></i> You own everything we build</div>
+    <div class="trust-item"><i class="ti ti-map-pin"></i> UK-based team</div>
+  </div>
+
+  <!-- Problem section -->
+  <section class="section problem-section">
+    <div class="section-inner">
+      <div class="section-eyebrow">The challenge</div>
+      <div class="section-title">Sound familiar?</div>
+      <p class="section-sub">Most organisations struggle with the same data problems. Microsoft Fabric and Power BI are
+        built to solve them.</p>
+      <div class="problems-grid">
+        <div class="problem-card">
+          <i class="ti ti-database-x"></i>
+          <h4>Data scattered everywhere</h4>
+          <p>Reports pulling from different systems, spreadsheets, and databases — with no single version of the truth.
+          </p>
+        </div>
+        <div class="problem-card">
+          <i class="ti ti-clock-x"></i>
+          <h4>Slow, manual reporting</h4>
+          <p>Teams spending hours each week preparing data instead of analysing it and making decisions.</p>
+        </div>
+        <div class="problem-card">
+          <i class="ti ti-chart-pie-off"></i>
+          <h4>Reports nobody trusts</h4>
+          <p>Different departments running the same numbers and getting different answers — eroding confidence in the
+            data.</p>
+        </div>
+        <div class="problem-card">
+          <i class="ti ti-eye-off"></i>
+          <h4>No real-time visibility</h4>
+          <p>Leaders making decisions based on last week's data, when the business is moving faster than the reports.
+          </p>
+        </div>
+      </div>
+      <div class="solution-bridge">
+        <i class="ti ti-sparkles"></i>
+        <p><strong>Microsoft Fabric and Power BI fix this</strong> — by bringing all your data into one governed lake,
+          transforming it automatically, and surfacing it in AI-powered reports your whole organisation can rely on.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Platform flow -->
+  <section class="section" id="platform">
+    <div class="section-inner">
+      <div class="section-eyebrow">The platform</div>
+      <div class="section-title">From raw data to business insight — in one connected platform</div>
+      <p class="section-sub">Microsoft Fabric unifies every stage of the data journey. No more stitching together
+        separate tools. No more broken pipelines. Just one platform, end to end.</p>
+
+      <div class="flow">
+
+        <!-- Column 1: Data Lake -->
+        <div class="flow-col">
+          <div class="flow-label"><span class="dot-blue"></span> Layer 1 — Store</div>
+          <div class="flow-card blue">
+            <h4>OneLake — your single source of truth</h4>
+            <p>All your data — from every system, source, and application — lands in one governed data lake. No copies,
+              no silos, no reconciliation.</p>
+          </div>
+          <div class="flow-card blue">
+            <h4>Unified data governance</h4>
+            <p>Security, access controls, and data lineage are applied once and enforced everywhere — so the right
+              people see the right data.</p>
+          </div>
+          <div class="flow-card blue">
+            <h4>Connect any source</h4>
+            <p>ERP systems, CRM platforms, databases, files, cloud services — Fabric connects to them all without
+              complex integration work.</p>
+          </div>
+        </div>
+
+        <div class="flow-arrow"><i class="ti ti-arrow-right"></i></div>
+
+        <!-- Column 2: Transform -->
+        <div class="flow-col">
+          <div class="flow-label"><span class="dot-teal"></span> Layer 2 — Transform</div>
+          <div class="flow-card teal">
+            <h4>Data pipelines &amp; integration</h4>
+            <p>Automated pipelines move, clean, and transform your data on a schedule — so your reports always reflect
+              the latest position, not a snapshot from last week.</p>
+          </div>
+          <div class="flow-card teal">
+            <h4>Data warehouse &amp; lakehouse</h4>
+            <p>Fabric's built-in warehouse and lakehouse capabilities let you model data at scale — combining the
+              flexibility of a lake with the structure of a warehouse.</p>
+          </div>
+          <div class="flow-card teal">
+            <h4>AI-assisted data preparation</h4>
+            <p>Copilot in Fabric helps your team clean, shape, and prepare data faster — reducing the manual work that
+              slows down insight delivery.</p>
+          </div>
+        </div>
+
+        <div class="flow-arrow"><i class="ti ti-arrow-right"></i></div>
+
+        <!-- Column 3: Report -->
+        <div class="flow-col">
+          <div class="flow-label"><span class="dot-purple"></span> Layer 3 — Report</div>
+          <div class="flow-card purple">
+            <h4>Power BI — reports everyone can use</h4>
+            <p>Beautiful, interactive dashboards and reports built on your governed data — accessible to decision-makers
+              across the business, on any device.</p>
+          </div>
+          <div class="flow-card purple">
+            <h4>Real-time &amp; scheduled refresh</h4>
+            <p>Reports update automatically as your data changes — giving leaders up-to-the-minute visibility without
+              anyone having to run an export.</p>
+          </div>
+          <div class="flow-card purple">
+            <h4>Copilot for Power BI</h4>
+            <p>Ask questions in plain English and get instant answers, summaries, and visuals — no SQL, no technical
+              skills required.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Business benefits -->
+  <section class="section" id="benefits">
+    <div class="section-inner">
+      <div class="section-eyebrow">Business benefits</div>
+      <div class="section-title">What this means for your organisation</div>
+      <p class="section-sub">The technology is powerful — but these are the outcomes your business will actually feel.
+      </p>
+      <div class="benefits-grid">
+        <div class="benefit-card">
+          <div class="benefit-icon blue"><i class="ti ti-database-check"></i></div>
+          <h3>One version of the truth</h3>
+          <p>With all data flowing through a single governed lake, every report, every team, and every decision is
+            working from the same numbers — no more conflicting figures.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon teal"><i class="ti ti-bolt"></i></div>
+          <h3>Faster, more confident decisions</h3>
+          <p>When reports update in real time and leaders can query their data in plain English, decisions happen faster
+            — and with far more confidence than gut feel allows.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon purple"><i class="ti ti-clock"></i></div>
+          <h3>Hours saved on manual reporting</h3>
+          <p>Automated pipelines and scheduled refreshes eliminate the weekly grind of pulling data, building
+            spreadsheets, and chasing numbers. Your team can focus on insight, not preparation.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon yellow"><i class="ti ti-shield-check"></i></div>
+          <h3>Data you can trust and govern</h3>
+          <p>Fabric's unified security and governance means you always know where your data is, who can see it, and
+            where it came from — critical for compliance and audit.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon blue"><i class="ti ti-users"></i></div>
+          <h3>Self-service for the whole business</h3>
+          <p>Power BI puts insight directly into the hands of non-technical users. Finance, operations, sales, HR —
+            everyone can explore their data without raising a ticket.</p>
+        </div>
+        <div class="benefit-card">
+          <div class="benefit-icon purple"><i class="ti ti-trending-up"></i></div>
+          <h3>A platform that scales with you</h3>
+          <p>Built on Azure, Fabric scales as your data volumes and user numbers grow — without the cost and complexity
+            of managing infrastructure yourself.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI features -->
+  <section class="ai-section">
+    <div class="ai-inner">
+      <div class="ai-eyebrow">AI capabilities</div>
+      <div class="ai-title">Intelligence built into every layer</div>
+      <p class="ai-sub">Microsoft Fabric and Power BI aren't just data tools — they're AI-powered platforms that help
+        your team work smarter, surface answers faster, and spot things they'd otherwise miss.</p>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <i class="ti ti-message-chatbot"></i>
+          <h4>Copilot in Power BI</h4>
+          <p>Ask questions in plain English — "What were our top-selling products last quarter?" — and get instant
+            answers, charts, and summaries without writing a single formula.</p>
+        </div>
+        <div class="ai-card">
+          <i class="ti ti-brain"></i>
+          <h4>Copilot in Fabric</h4>
+          <p>Generate data pipelines, write transformations, and prepare datasets using natural language — dramatically
+            reducing the time from raw data to clean, usable insight.</p>
+        </div>
+        <div class="ai-card">
+          <i class="ti ti-eye"></i>
+          <h4>Smart narratives</h4>
+          <p>Power BI automatically generates written summaries of your data — so non-technical audiences get clear,
+            plain-English explanations alongside every chart.</p>
+        </div>
+        <div class="ai-card">
+          <i class="ti ti-trending-up"></i>
+          <h4>Anomaly detection</h4>
+          <p>AI continuously monitors your data and flags unusual patterns — a sudden drop in revenue, a spike in
+            support tickets — before they become problems.</p>
+        </div>
+        <div class="ai-card">
+          <i class="ti ti-crystal-ball"></i>
+          <h4>Forecasting</h4>
+          <p>Built-in forecasting models project trends forward based on your historical data — giving planners and
+            finance teams a reliable starting point for budgeting and strategy.</p>
+        </div>
+        <div class="ai-card">
+          <i class="ti ti-key"></i>
+          <h4>Key influencers</h4>
+          <p>Power BI's AI visuals automatically identify what's driving a metric up or down — so you understand the why
+            behind the numbers, not just the what.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our services -->
+  <section class="section" id="services">
+    <div class="section-inner">
+      <div class="section-eyebrow">How we help</div>
+      <div class="section-title">CloudPath Fabric &amp; Power BI services</div>
+      <p class="section-sub">We don't just implement the technology — we help you design the right data architecture for
+        your organisation and make sure your team can use it confidently from day one.</p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="card-icon"><i class="ti ti-clipboard-check"></i></div>
+          <h3>Data &amp; analytics readiness review</h3>
+          <p>We assess your current data landscape — sources, quality, governance, and reporting — and produce a clear
+            roadmap for moving to Fabric and Power BI.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="ti ti-topology-star-ring"></i></div>
+          <h3>Fabric architecture &amp; design</h3>
+          <p>We design your OneLake structure, workspace layout, data domains, and governance model — built for scale
+            and aligned to Microsoft best practice.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="ti ti-transfer"></i></div>
+          <h3>Data integration &amp; pipeline build</h3>
+          <p>We build the pipelines that connect your source systems to Fabric, automate data transformation, and keep
+            everything refreshed and reliable.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="ti ti-chart-bar"></i></div>
+          <h3>Power BI implementation</h3>
+          <p>We design and build your Power BI semantic models, reports, and dashboards — focused on what your
+            stakeholders actually need to see, not just what's possible.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="ti ti-school"></i></div>
+          <h3>Training &amp; enablement</h3>
+          <p>We train your team to create, maintain, and extend your Fabric and Power BI environment — so you're not
+            dependent on us for every change.</p>
+        </div>
+        <div class="service-card">
+          <div class="card-icon"><i class="ti ti-settings-automation"></i></div>
+          <h3>Managed service &amp; support</h3>
+          <p>Ongoing management of your Fabric environment — monitoring, optimisation, and a named engineer to call when
+            you need help or want to grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How we work -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-eyebrow">How we work</div>
+      <div class="section-title">A structured path from assessment to insight</div>
+      <div class="steps-row">
+        <div class="step">
+          <div class="step-num">1</div>
+          <h4>Discovery</h4>
+          <p>We understand your data sources, reporting needs, and what decisions the business needs to make better.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <h4>Design</h4>
+          <p>We produce an architecture and implementation plan — OneLake structure, pipelines, data model, and reports.
+          </p>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <h4>Build</h4>
+          <p>We implement Fabric, connect your data sources, build transformations, and deliver Power BI reports in
+            sprints.</p>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <h4>Enable</h4>
+          <p>We train your team, hand over documentation, and stay available to help you grow and iterate from there.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="cta-section" id="contact">
+    <div class="cta-inner">
+      <div class="section-eyebrow" style="text-align:center;">Get in touch</div>
+      <h2>Ready to talk Azure?</h2>
+      <p>Tell us a little about your project and we'll be in touch within one business day.</p>
+      <form class="contact-form" onsubmit="return false;">
+        <input type="text" placeholder="Your name" aria-label="Your name" required />
+        <input type="email" placeholder="Work email" aria-label="Work email" required />
+        <input type="text" placeholder="Company name" aria-label="Company name" />
+        <select aria-label="Service of interest">
+          <option value="" disabled selected>Select service of interest</option>
+          <option>General Azure consultancy</option>
+          <option>Copilot readiness</option>
+          <option>Cloud readiness</option>
+          <option>Microsoft Fabric</option>
+          <option>Microsoft Power BI</option>
+          <option>AI</option>
+          <option>Infrastructure as Code</option>
+          <option>Backup as a Service</option>
+          <option>Managed service</option>
+          <option>Azure Foundry</option>
+          <option>Azure Factory</option>
+          <option>SAP EPM</option>
+          <option>Other / Multiple</option>
+        </select>
+        <textarea placeholder="Briefly describe what you're looking to achieve..."
+          aria-label="Project description"></textarea>
+        <button type="submit" class="submit-btn">Send message <i class="ti ti-arrow-right"></i></button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <span class="footer-brand">Si BCS Ltd.</span>
+    <span class="footer-copy">&copy; 2026 Si BCS Ltd. All rights reserved.</span>
+    <div class="footer-links">
+      <a href="./privacy.html">Privacy policy</a>
+      <a href="./terms.html">Terms</a>
+      <a href="mailto:info@sibcs.co.uk">info@@sibcs.co.uk</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

@@ -963,7 +963,128 @@ body {
   font-style: normal;
 }
 
+/* ─── AVD & Nerdio ───────────────────────────────────────────────────────── */
 
+/* ── PAGE-SPECIFIC STYLES ── */
+
+    /* Hero — teal-to-blue gradient to differentiate from other pages */
+    .hero /*{ background: linear-gradient(135deg, #0C447C 0%, #185FA5 45%, #0F6E56 100%); }*/
+
+    /* Nerdio differentiator band */
+    .nerdio-band {
+      background: linear-gradient(135deg, #0F6E56 0%, #1D9E75 100%);
+      color: #fff;
+      padding: 4rem 2.5rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .nerdio-band-inner { max-width: 980px; margin: 0 auto; }
+    .nerdio-eyebrow {
+      font-size: 12px; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;
+    }
+    .nerdio-band h2 { font-size: 26px; font-weight: 600; margin-bottom: 0.75rem; }
+    .nerdio-band .lead { font-size: 16px; opacity: 0.88; max-width: 600px; line-height: 1.7; margin-bottom: 2.5rem; }
+    .nerdio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+    .nerdio-card {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 12px;
+      padding: 1.25rem;
+    }
+    .nerdio-card i { font-size: 22px; display: block; margin-bottom: 0.75rem; opacity: 0.9; }
+    .nerdio-card h4 { font-size: 14px; font-weight: 600; margin-bottom: 0.4rem; }
+    .nerdio-card p { font-size: 13px; opacity: 0.82; line-height: 1.6; }
+
+    /* AVD vs Nerdio comparison strip */
+    .compare-strip {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 2.5rem;
+    }
+    .compare-col {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+    .compare-col.featured { border-color: var(--teal-400); }
+    .compare-header {
+      padding: 1rem 1.25rem;
+      background: var(--bg-subtle);
+      border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 10px;
+    }
+    .compare-col.featured .compare-header {
+      background: var(--teal-light);
+      border-color: var(--teal-400);
+    }
+    .compare-header i { font-size: 20px; color: var(--blue-600); }
+    .compare-col.featured .compare-header i { color: var(--teal-400); }
+    .compare-header h3 { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+    .compare-header span { font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.08em; color: var(--teal-400); margin-left: auto; }
+    .compare-body { padding: 1.25rem; }
+    .compare-list { list-style: none; }
+    .compare-list li {
+      font-size: 13px; color: var(--text-secondary);
+      padding: 5px 0; display: flex; align-items: flex-start; gap: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-list li:last-child { border-bottom: none; }
+    .compare-list li i { font-size: 15px; flex-shrink: 0; margin-top: 2px; }
+    .compare-list li i.ok { color: var(--teal-400); }
+    .compare-list li i.warn { color: #B45309; }
+
+    /* Use-case cards */
+    .usecase-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .usecase-card {
+      background: var(--bg-subtle);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.5rem;
+    }
+    .usecase-icon {
+      width: 42px; height: 42px; background: var(--blue-50);
+      border-radius: 8px; display: flex; align-items: center;
+      justify-content: center; margin-bottom: 1rem;
+    }
+    .usecase-icon i { font-size: 22px; color: var(--blue-600); }
+    .usecase-card h3 { font-size: 15px; font-weight: 600; color: var(--text-primary); margin-bottom: 0.4rem; }
+    .usecase-card p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
+
+    /* Cost savings callout */
+    .savings-band {
+      background: var(--blue-50);
+      border-top: 1px solid var(--blue-100);
+      border-bottom: 1px solid var(--blue-100);
+      padding: 2rem 2.5rem;
+    }
+    .savings-inner {
+      max-width: 980px; margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      text-align: center;
+    }
+    .saving-stat .num {
+      font-size: 32px; font-weight: 700;
+      color: var(--blue-600); display: block; margin-bottom: 0.25rem;
+    }
+    .saving-stat .lbl { font-size: 13px; color: var(--text-secondary); line-height: 1.5; }
+
+    /* Responsive additions */
+    @media (max-width: 720px) {
+      .compare-strip { grid-template-columns: 1fr; }
+      .savings-band { padding: 2rem 1.25rem; }
+      .nerdio-band { padding: 2.5rem 1.25rem; }
+    }
 
 
 /* ─── FOOTER ─────────────────────────────────────────────────────────────────── */

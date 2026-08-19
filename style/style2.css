@@ -3384,4 +3384,21 @@ footer {
   .neutral-band {
     padding: 2.5rem 1.25rem;
   }
+
+}
+
+.about_us_block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: lightgray;
+}
+
+.container {
+  text-align: center;
+}
+
+.about_us_block img {
+ width: 100px;
+ height: 100px;
 }

@@ -147,6 +147,15 @@
       letter-spacing: -0.5px;
     }
 
+    .hero h2 {
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: var(white);
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.5px;
+    }
+
     .hero h1 em {
       font-style: normal;
       color: var(--blue-600);
@@ -243,7 +252,15 @@
       font-size: 18px;
       font-weight: 600;
       letter-spacing: 0.1em;
-      /* text-transform: uppercase; */
+      text-transform: uppercase;
+      color: var(--blue-600);
+      margin-bottom: 0.5rem;
+    }
+
+    .section-eyebrow-lower {
+      font-size: 18px;
+      font-weight: 600;
+      letter-spacing: 0.1em;
       color: var(--blue-600);
       margin-bottom: 0.5rem;
     }
@@ -861,4 +878,41 @@
     /* Show the dropdown menu when the user moves the mouse over the dropdown button */
     .dropdown-main:hover .dropdown-content {
       display: block;
+    }
+
+
+    /* Hero */
+    .hero-sap {
+      padding: 5rem 2.5rem 4rem;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .hero-sap h1 {
+      font-size: 42px;
+      font-weight: 600;
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.5px;
+    }
+
+    .hero h1 em {
+      font-style: normal;
+      color: var(--blue-600);
+    }
+
+    .hero-sap p {
+      font-size: 18px;
+      color: var(--text-secondary);
+      max-width: 950px;
+      /* 520px; */
+      margin: 0 auto 2rem;
+    }
+
+    .hero-actions-sap {
+      display: flex;
+      gap: 12px;
+      justify-content: center;
+      flex-wrap: wrap;
     }

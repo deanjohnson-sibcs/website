@@ -1,645 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CPM &amp; EPM Advisory — Si BCS</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
-  <link rel="stylesheet" href="./style/style2.css">
-  <link rel="stylesheet" href="./style/style.css">
-  <script src="./script/script.js"></script>
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add('js');</script>
+<title>CPM / EPM Advisory, Si BCS</title>
+<meta name="description" content="Vendor-neutral, product-agnostic EPM platform selection and end-to-end delivery. We evaluate every credible platform against your requirements. Finance and IT expertise combined.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="index.html" aria-label="Si BCS home">
+      <svg class="brand-logo" viewBox="146.25 38.75 489.75 148.50" role="img" aria-label="Si BCS" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M 252.50 105.00 L 251.50 105.75  L 251.50 159.75  L 271.25 160.00  L 271.75 159.50  L 271.75 105.75  L 271.25 105.25  ZM 367.75 70.75 L 367.25 71.50  L 367.25 159.50  L 421.75 159.75  L 427.25 158.75  L 433.50 156.50  L 436.75 154.75  L 439.50 152.50  L 442.75 148.50  L 445.50 142.25  L 446.50 135.75  L 445.75 128.25  L 443.50 123.00  L 440.50 119.25  L 434.75 115.25  L 429.75 113.25  L 430.25 112.00  L 432.50 111.25  L 437.50 107.50  L 439.50 105.00  L 441.75 99.75  L 442.50 95.50  L 441.75 87.25  L 439.75 82.00  L 438.00 79.50  L 435.50 77.00  L 431.25 74.25  L 426.25 72.25  L 421.00 71.00  L 412.00 70.50  ZM 388.75 123.75 L 389.75 122.75  L 414.50 122.75  L 417.25 123.50  L 420.00 124.75  L 423.00 127.75  L 424.00 130.25  L 424.00 135.25  L 422.75 138.00  L 420.50 140.25  L 416.00 142.00  L 389.75 142.25  L 389.00 141.75  ZM 389.00 89.25 L 390.00 88.25  L 413.75 88.50  L 417.50 90.50  L 419.00 92.25  L 420.25 95.00  L 420.25 99.25  L 418.75 102.50  L 416.75 104.50  L 411.75 106.25  L 390.00 106.25  L 389.00 105.50  ZM 570.75 70.00 L 567.00 71.25  L 559.75 75.50  L 555.25 79.75  L 553.00 83.00  L 551.00 87.75  L 550.00 93.00  L 550.00 99.75  L 551.25 105.50  L 553.25 109.75  L 555.25 112.50  L 561.00 117.25  L 565.00 119.25  L 574.50 122.50  L 590.00 126.25  L 596.00 128.75  L 598.00 130.50  L 599.25 132.50  L 599.75 134.25  L 599.25 138.00  L 597.25 140.50  L 593.75 142.25  L 589.00 143.25  L 582.00 143.25  L 574.25 141.75  L 569.25 140.00  L 562.75 136.75  L 556.25 132.25  L 555.25 133.25  L 547.00 147.75  L 547.00 148.75  L 552.50 152.75  L 560.00 156.75  L 569.50 159.75  L 574.50 160.75  L 584.00 161.50  L 596.75 160.75  L 604.75 158.50  L 609.25 156.50  L 613.75 153.50  L 618.00 148.75  L 620.50 144.25  L 622.00 137.75  L 622.00 128.25  L 620.50 123.00  L 618.00 119.00  L 614.25 115.25  L 607.25 111.00  L 600.75 108.75  L 582.00 104.25  L 576.50 102.00  L 572.75 98.00  L 572.25 95.75  L 572.50 93.00  L 575.50 89.25  L 578.75 87.75  L 588.25 87.25  L 592.50 87.75  L 602.25 91.00  L 611.25 96.00  L 613.75 92.25  L 620.50 79.75  L 620.50 79.00  L 612.25 74.00  L 605.25 71.25  L 597.75 69.25  L 589.25 68.25  L 580.75 68.25  ZM 493.25 69.00 L 482.50 72.25  L 473.50 77.50  L 467.00 83.50  L 461.50 91.25  L 458.25 98.50  L 456.25 106.00  L 455.50 111.75  L 455.50 119.50  L 457.25 129.75  L 461.50 140.00  L 466.00 146.25  L 474.25 153.75  L 481.25 157.75  L 491.00 160.75  L 497.50 161.75  L 508.00 161.75  L 518.75 159.75  L 526.25 156.75  L 532.00 153.25  L 539.50 146.50  L 539.50 145.50  L 527.50 131.75  L 526.50 132.00  L 522.25 136.00  L 518.25 138.75  L 510.50 141.75  L 507.50 142.25  L 499.50 142.25  L 493.75 141.00  L 490.50 139.50  L 486.25 136.25  L 483.50 133.25  L 479.75 126.75  L 477.75 119.75  L 477.75 111.00  L 480.00 103.00  L 483.50 97.00  L 487.25 93.25  L 492.75 89.75  L 496.75 88.50  L 502.75 87.75  L 511.00 88.75  L 513.75 89.75  L 519.50 93.00  L 523.25 96.00  L 526.25 99.50  L 527.00 99.50  L 539.75 83.50  L 535.00 79.00  L 529.50 75.00  L 522.25 71.25  L 518.75 70.00  L 514.25 69.00  L 505.50 68.25  ZM 183.00 70.00 L 177.00 72.50  L 172.50 75.50  L 168.25 79.75  L 165.00 85.00  L 163.25 90.25  L 162.75 96.00  L 163.25 102.50  L 164.75 107.25  L 167.25 111.50  L 170.25 114.75  L 173.75 117.25  L 177.75 119.25  L 188.00 122.75  L 202.50 126.00  L 209.00 128.75  L 211.25 131.00  L 212.25 132.75  L 212.25 136.75  L 211.00 139.25  L 207.25 142.00  L 201.75 143.25  L 194.75 143.25  L 188.75 142.25  L 183.75 140.75  L 177.00 137.75  L 169.75 133.00  L 169.00 133.00  L 160.25 148.50  L 161.25 149.75  L 165.50 152.75  L 174.75 157.50  L 181.75 159.75  L 187.00 160.75  L 195.00 161.50  L 202.75 161.50  L 209.50 160.75  L 216.75 158.75  L 222.00 156.25  L 226.00 153.50  L 230.00 149.25  L 232.75 144.50  L 234.75 137.00  L 234.75 128.50  L 232.75 122.50  L 231.00 119.50  L 227.75 116.00  L 221.25 111.75  L 212.00 108.50  L 196.00 104.75  L 188.75 101.75  L 185.00 97.75  L 184.75 93.50  L 185.50 91.75  L 187.25 89.75  L 190.75 88.00  L 195.75 87.25  L 200.50 87.25  L 204.75 87.75  L 210.50 89.50  L 216.50 92.00  L 223.50 96.00  L 232.75 79.75  L 232.75 79.00  L 229.00 76.25  L 223.00 73.25  L 214.00 70.00  L 211.25 69.75  L 210.50 69.25  L 202.50 68.25  L 192.75 68.25  Z"/><path fill="#18E0CE" fill-rule="evenodd" d="M 251.50 79.75 L 251.50 97.50  L 271.25 98.00  L 272.00 97.50  L 272.00 80.00  L 271.50 79.50  ZM 319.25 52.75 L 318.75 53.50  L 319.00 172.50  L 319.75 173.25  L 321.25 173.25  L 322.00 171.75  L 321.75 53.25  L 321.25 52.75  Z"/></svg>
+    </a>
 
-    <nav>
-        <a href="#" class="nav-brand">
-            <span><img src="./images/logo.png" alt="Si BCS" style="width:150px;height:40px;" float="right"></span>
-            <i class="ti ti-arrow-up" style="font-size: 1.50em;"></i>
-        </a>
-        <div class="nav-links">
-            <a href="./index.html">Home</a>
-            <div id="dropdown" class="dropdown" onclick="openNav()">
-                <button id="dropdown-btn" class="dropbtn"> Solutions
-                    <i class="ti ti-caret-down"></i>
-                </button>
-                <div id="dropdown-content" class="dropdown-content">
-                    <a href="./data-lifecycle.html">Data Lifecycle Management</a>
-                    <a href="./automation-ai.html">AI, Agents &amp; Automation</a>
-                    <a href="./modern-workspace.html">Modern Workspace</a>
-                </div>
-            </div>
-            <div id=" dropdown" class="dropdown" onclick="openNav()">
-                <button id="dropdown-btn" class="dropbtn">How we help
-                    <i class="ti ti-caret-down"></i>
-                </button>
-                <div id="dropdown-content" class="dropdown-content">
-                    <a href="./cpm-epm-advisory.html">CPM / EPM Advisory</a>
-                    <a href="./sap-epm-consultancy.html">SAP Technical Consultancy</a>
-                    <a href="./azure-consultancy.html">Public Cloud Advisory</a>
-                </div>
-            </div>
-            <a href="./about-us.html">About Us</a>
-            <a href="#contact" class="nav-cta">Get in touch</a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <div class="nav-item">
+        <button aria-haspopup="true">What we do
+          <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
+        </button>
+        <div class="mega" role="menu">
+          <div class="mega-col-label">Financial Performance, office of the CFO</div>
+          <a class="mega-link" href="cpm-epm-advisory.html"><strong>CPM / EPM Advisory</strong><span>Vendor-neutral platform selection &amp; delivery</span></a>
+          <a class="mega-link" href="sap-epm-consultancy.html"><strong>SAP EPM Consultancy</strong><span>Full SAP EPM suite, SAC, Group Reporting, BPC</span></a>
+          <div class="mega-col-label">Data, Cloud &amp; AI, office of the CIO</div>
+          <a class="mega-link" href="data-lifecycle.html"><strong>Data Platform</strong><span>Microsoft Fabric, Power BI &amp; Purview</span></a>
+          <a class="mega-link" href="financial-cloud.html"><strong>Financial Cloud &amp; Secure Access</strong><span>Secure Azure cloud &amp; governed access</span></a>
+          <a class="mega-link" href="automation-ai.html"><strong>AI &amp; Automation</strong><span>Copilots, agents &amp; intelligent workflows</span></a>
         </div>
+      </div>
+      <a href="insights.html">Insights</a>
+      <a href="index.html#approach">Approach</a>
+      <a href="about-us.html">About</a>
     </nav>
 
-  <!-- Hero -->
-  <section class="hero">
-    <div class="hero-inner">
-      <div>
-        <div class="hero-badges">
-          <div class="hero-badge"><i class="ti ti-chart-line"></i> CPM / EPM Advisory - <i class="ti ti-scale"></i> Vendor-neutral</div>
-        </div>
-        <h1>The right EPM platform for your organisation<br><em> chosen and delivered by experts</em></h1>
-        <p>Whether you're selecting your first Corporate Performance Management platform or replacing a system that's no longer working, Si BCS provides independent advisory and end-to-end implementation across all leading EPM platforms.</p>
-        <div class="hero-actions">
-          <a href="#contact" class="btn-primary"><i class="ti ti-mail"></i> Get in touch</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Trust bar -->
-  <div class="trust-bar">
-    <div class="trust-item"><i class="ti ti-scale"></i> Fully vendor-neutral advisory</div>
-    <div class="trust-item"><i class="ti ti-building"></i> Finance & IT expertise combined</div>
-    <div class="trust-item"><i class="ti ti-map-pin"></i> UK-based team</div>
-  </div>
-
-  <!-- What is CPM/EPM -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-eyebrow">What is CPM / EPM?</div>
-      <div class="section-title">Planning, consolidation, and reporting — unified</div>
-      <p class="section-sub">Corporate Performance Management (CPM) and Enterprise Performance Management (EPM) platforms replace disconnected spreadsheets and manual processes with a single, governed system for financial and operational planning, consolidation, and reporting.</p>
-      <div class="explainer-grid">
-        <div class="explainer-card">
-          <div class="ex-icon"><i class="ti ti-calendar-stats"></i></div>
-          <h3>Financial planning & budgeting</h3>
-          <p>Driver-based budgets, rolling forecasts, and scenario modelling — replacing static annual spreadsheet exercises with dynamic, connected planning.</p>
-        </div>
-        <div class="explainer-card">
-          <div class="ex-icon"><i class="ti ti-building-bank"></i></div>
-          <h3>Financial consolidation</h3>
-          <p>Automated consolidation of legal entities, eliminations, currency translation, and minority interests — reducing close times from weeks to days.</p>
-        </div>
-        <div class="explainer-card">
-          <div class="ex-icon"><i class="ti ti-chart-dots"></i></div>
-          <h3>Management reporting</h3>
-          <p>Consistent, governed reporting across the business — P&amp;L, balance sheet, cash flow, and operational KPIs — with drill-through to transaction detail.</p>
-        </div>
-        <div class="explainer-card">
-          <div class="ex-icon"><i class="ti ti-git-branch"></i></div>
-          <h3>Scenario & what-if modelling</h3>
-          <p>Model multiple futures instantly — best case, worst case, and everything in between — so leadership can make decisions with a clear view of the range of outcomes.</p>
-        </div>
-        <div class="explainer-card">
-          <div class="ex-icon"><i class="ti ti-users-group"></i></div>
-          <h3>Workforce planning</h3>
-          <p>Headcount planning, salary modelling, and HR cost integration — connecting people plans to financial forecasts in a single environment.</p>
-        </div>
-        <div class="explainer-card">
-          <div class="ex-icon"><i class="ti ti-scale"></i></div>
-          <h3>Regulatory & ESG reporting</h3>
-          <p>Structured data collection, audit trails, and disclosure management for statutory reporting, ESG frameworks, and regulatory submissions.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Challenge strip -->
-  <div class="challenge-strip">
-    <div class="challenge-strip-inner">
-      <i class="ti ti-alert-circle"></i>
-      <div>
-        <h4>The platform selection problem</h4>
-        <p>With six or more credible EPM platforms on the market — each with different strengths, pricing models, and implementation complexity — choosing the wrong one is an expensive mistake. Most organisations don't have the in-house experience to evaluate them objectively. That's where independent advisory makes the difference.</p>
-      </div>
+    <div class="nav-cta">
+      <button class="theme-toggle" data-theme-toggle aria-label="Toggle colour theme">
+        <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+      </button>
+      <a class="btn btn--primary" href="index.html#contact">Get in touch</a>
+      <button class="menu-btn" data-menu-toggle aria-label="Open menu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
     </div>
   </div>
+</header>
 
-  <br>
+<!-- mobile menu -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html">Home</a>
+  <div class="ml-label">Financial Performance</div>
+  <a href="cpm-epm-advisory.html">CPM / EPM Advisory</a>
+  <a href="sap-epm-consultancy.html">SAP EPM Consultancy</a>
+  <div class="ml-label">Data, Cloud &amp; AI</div>
+  <a href="data-lifecycle.html">Data Platform</a>
+  <a href="financial-cloud.html">Financial Cloud &amp; Secure Access</a>
+  <a href="automation-ai.html">AI &amp; Automation</a>
+  <div class="ml-label">Company</div>
+  <a href="index.html#approach">Approach</a>
+  <a href="about-us.html">About</a>
+  <a href="insights.html">Insights</a>
+  <a class="btn btn--primary" href="index.html#contact">Get in touch</a>
+</div>
 
-  <!-- Platform cards -->
-  <section class="section platform-section" id="platforms">
-    <div class="section-inner">
-      <div class="section-eyebrow">Platforms we cover</div>
-      <div class="section-title">Independent expertise across all leading EPM platforms</div>
-      <p class="section-sub">We are certified and experienced across the full EPM market — so our recommendation is always driven by your requirements, not by partnership agreements or commission structures.</p>
-      <div class="platforms-grid">
 
-        <div class="platform-card">
-          <span class="platform-badge finance">Financial close & consolidation</span>
-          <br>
-          <div class="platform-vendor">OneStream Software</div>
-          <h3>OneStream XF</h3>
-          <p class="platform-desc">A unified platform combining financial consolidation, planning, reporting, and analytics in a single application — eliminating the need for multiple point solutions and complex integrations.</p>
-          <ul class="platform-strengths">
-            <li><i class="ti ti-check"></i> Unified platform — consolidation and planning in one</li>
-            <li><i class="ti ti-check"></i> Extensible marketplace of pre-built solutions</li>
-            <li><i class="ti ti-check"></i> Strong for complex group consolidations</li>
-            <li><i class="ti ti-check"></i> Cloud and on-premise deployment options</li>
-          </ul>
-          <div class="platform-fit"><strong>Best fit:</strong> Mid-market to enterprise organisations needing consolidation and planning in a single platform, particularly those replacing Hyperion or HFM.</div>
-        </div>
-
-        <div class="platform-card">
-          <span class="platform-badge planning">Connected planning</span>
-          <br>
-          <div class="platform-vendor">Anaplan</div>
-          <h3>Anaplan</h3>
-          <p class="platform-desc">A cloud-native connected planning platform built for large, complex organisations running multidimensional planning models across finance, sales, supply chain, and HR.</p>
-          <ul class="platform-strengths">
-            <li><i class="ti ti-check"></i> Highly flexible modelling — complex hierarchies and drivers</li>
-            <li><i class="ti ti-check"></i> Strong for cross-functional connected planning</li>
-            <li><i class="ti ti-check"></i> Enterprise scalability — thousands of concurrent users</li>
-            <li><i class="ti ti-check"></i> Native AI and ML forecasting capabilities</li>
-          </ul>
-          <div class="platform-fit"><strong>Best fit:</strong> Large enterprises with complex, multi-dimensional planning requirements spanning finance and operations — particularly strong for sales and supply chain planning.</div>
-        </div>
-
-        <div class="platform-card">
-          <span class="platform-badge oracle">Oracle Cloud</span>
-          <br>
-          <div class="platform-vendor">Oracle</div>
-          <h3>Oracle EPM Cloud</h3>
-          <p class="platform-desc">Oracle's suite of cloud EPM applications — including EPBCS for planning, FCCS for consolidation, and ARCS for account reconciliation — delivered on Oracle Cloud Infrastructure.</p>
-          <ul class="platform-strengths">
-            <li><i class="ti ti-check"></i> Deep ERP integration with Oracle Fusion and EBS</li>
-            <li><i class="ti ti-check"></i> Mature, feature-rich consolidation (FCCS)</li>
-            <li><i class="ti ti-check"></i> Strong regulatory and statutory reporting</li>
-            <li><i class="ti ti-check"></i> Pre-built financial intelligence and narratives</li>
-          </ul>
-          <div class="platform-fit"><strong>Best fit:</strong> Organisations running Oracle ERP looking for tight native integration, or those with mature consolidation and statutory reporting requirements.</div>
-        </div>
-
-        <div class="platform-card">
-          <span class="platform-badge sap">SAP ecosystem</span>
-          <br>
-          <div class="platform-vendor">SAP</div>
-          <h3>SAP EPM / Group Reporting</h3>
-          <p class="platform-desc">SAP's EPM portfolio spans SAP Analytics Cloud for planning, SAP Group Reporting for statutory consolidation, and SAP BPC for organisations on legacy SAP environments.</p>
-          <ul class="platform-strengths">
-            <li><i class="ti ti-check"></i> Native integration with SAP S/4HANA and ECC</li>
-            <li><i class="ti ti-check"></i> SAP Analytics Cloud — planning and BI in one tool</li>
-            <li><i class="ti ti-check"></i> Group Reporting embedded in S/4HANA</li>
-            <li><i class="ti ti-check"></i> Strong for SAP-centric organisations</li>
-          </ul>
-          <div class="platform-fit"><strong>Best fit:</strong> Organisations with significant SAP ERP investment seeking native EPM integration, or those on S/4HANA looking to leverage embedded Group Reporting.</div>
-        </div>
-
-        <div class="platform-card">
-          <span class="platform-badge board">Integrated business planning</span>
-          <br>
-          <div class="platform-vendor">Board International</div>
-          <h3>Board</h3>
-          <p class="platform-desc">A unified decision-making platform combining business intelligence, planning, and predictive analytics — with a no-code modelling environment and strong self-service capabilities.</p>
-          <ul class="platform-strengths">
-            <li><i class="ti ti-check"></i> Combined BI and planning in a single platform</li>
-            <li><i class="ti ti-check"></i> No-code modelling — lower IT dependency</li>
-            <li><i class="ti ti-check"></i> Strong retail, manufacturing, and financial services templates</li>
-            <li><i class="ti ti-check"></i> Flexible deployment — cloud, on-premise, hybrid</li>
-          </ul>
-          <div class="platform-fit"><strong>Best fit:</strong> Mid-market organisations wanting combined BI and planning with strong self-service, particularly in retail, manufacturing, and financial services.</div>
-        </div>
-
-        <div class="platform-card">
-          <span class="platform-badge cognos">IBM</span>
-          <br>
-          <div class="platform-vendor">IBM</div>
-          <h3>IBM Planning Analytics (TM1)</h3>
-          <p class="platform-desc">IBM Planning Analytics, powered by the TM1 engine, is a high-performance multidimensional planning platform with extensive calculation power and a large installed base across financial services and insurance.</p>
-          <ul class="platform-strengths">
-            <li><i class="ti ti-check"></i> Extremely powerful calculation engine (TM1)</li>
-            <li><i class="ti ti-check"></i> Highly flexible and customisable modelling</li>
-            <li><i class="ti ti-check"></i> Large existing install base — migration experience</li>
-            <li><i class="ti ti-check"></i> Strong in financial services and insurance</li>
-          </ul>
-          <div class="platform-fit"><strong>Best fit:</strong> Organisations with complex calculation requirements or an existing TM1 investment looking to modernise to Planning Analytics with Workspace.</div>
-        </div>
-
-      </div>
+<section class="page-hero">
+  <div class="wrap">
+    <div class="page-hero-inner">
+      <div class="crumbs"><a href="index.html">Home</a><span class="sep">/</span><span>CPM / EPM Advisory</span></div>
+      <p class="eyebrow">Financial Performance · Office of the CFO</p>
+      <h1>The right EPM platform for your organisation, <em>chosen and delivered by experts</em></h1>
+      <p class="sub">Fully vendor-neutral advisory and end-to-end delivery across every leading EPM platform. Whether you're selecting for the first time or replacing a legacy system, we find the right fit, then make it real.</p>
+      <div class="hero-cta"><a class="btn btn--onink" href="index.html#contact">Get in touch <svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Vendor neutral band -->
-  <section class="neutral-band">
-    <div class="neutral-inner">
-      <div class="neutral-eyebrow">Our advisory approach</div>
-      <h2>We don't sell platforms. We find the right one for you.</h2>
-      <p class="lead">Every EPM vendor will tell you their platform is the best. We've implemented all of them — which means we can give you an honest, independent view of what will actually work for your organisation, your processes, and your budget. No hidden agenda. No margin on licences. Just sound advice.</p>
-      <div class="neutral-points">
-        <div class="neutral-point">
-          <i class="ti ti-scale"></i>
-          <h4>No vendor partnerships that bias us</h4>
-          <p>We maintain certified expertise across all major platforms. We don't take referral fees or licence margin — so our recommendation is always independent.</p>
-        </div>
-        <div class="neutral-point">
-          <i class="ti ti-user-check"></i>
-          <h4>Finance and IT expertise combined</h4>
-          <p>Our team includes qualified finance professionals and technical architects — so we understand your processes as well as the platforms designed to support them.</p>
-        </div>
-        <div class="neutral-point">
-          <i class="ti ti-eye"></i>
-          <h4>Honest about complexity and cost</h4>
-          <p>We tell you what implementations actually cost and take — not just the vendor's best-case estimate. No surprises six months into delivery.</p>
-        </div>
-        <div class="neutral-point">
-          <i class="ti ti-refresh"></i>
-          <h4>With you from selection to go-live</h4>
-          <p>Our advisory doesn't stop at platform selection. We can run the procurement, manage the vendor, or deliver the implementation ourselves.</p>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">What is CPM / EPM?</p>
+      <h2>Planning, consolidation and reporting, unified</h2>
+      <p class="lede">Corporate and Enterprise Performance Management platforms replace fragile spreadsheets with governed systems for financial and operational management. Done well, they shorten the close, sharpen the forecast, connect financial and operational planning (xP&amp;A), and give leadership one version of the truth.</p>
+    </div>
+    <div class="cards cards--3">
+      <div class="card fin reveal"><h4>Financial planning &amp; budgeting</h4><p>Driver-based models, rolling forecasts and scenario planning that replace static spreadsheet exercises.</p></div>
+      <div class="card fin reveal"><h4>Financial consolidation</h4><p>Automated consolidation of entities, eliminations and currency translation, cutting the close from weeks to days.</p></div>
+      <div class="card fin reveal"><h4>Management reporting</h4><p>Consistent, governed P&amp;L, balance sheet, cash flow and KPI reporting with transaction drill-through.</p></div>
+      <div class="card fin reveal"><h4>Scenario &amp; what-if modelling</h4><p>Model multiple futures so leadership can see the impact of decisions before committing to them.</p></div>
+      <div class="card fin reveal"><h4>Workforce planning</h4><p>Headcount and salary modelling integrated directly with your financial forecast.</p></div>
+      <div class="card fin reveal"><h4>Regulatory &amp; ESG reporting</h4><p>Structured data collection with audit trails for statutory, regulatory and ESG submissions.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="split">
+      <div class="reveal">
+        <p class="eyebrow">The selection problem</p>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem)">Choosing the wrong platform is an expensive mistake</h2>
+        <p class="lede" style="margin-top:1.1rem">With six or more credible EPM platforms on the market, each with different strengths, pricing models and implementation complexity, the wrong choice costs years and hundreds of thousands of pounds. Most organisations don't have the internal, cross-platform expertise to evaluate them objectively. That's exactly what we provide.</p>
+        <p class="lede" style="margin-top:1rem">We hold no vendor partnerships that bias us, earn no referral fees, and take no licence margin. The recommendation you get is source-system agnostic and fits your requirements, your data and your budget, never a platform we're paid to push, and never lock-in for its own sake.</p>
+      </div>
+      <div class="reveal">
+        <div class="panel">
+          <p class="eyebrow">How we evaluate</p>
+          <h3 style="font-size:1.3rem;margin-bottom:.3rem">Every platform, the same scorecard</h3>
+          <p style="font-size:.92rem;color:var(--muted);margin-bottom:.4rem">We weight each dimension to what matters for you, then score every candidate the same way.</p>
+          <ul class="olist">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Functional fit to your actual requirements</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Consolidation, close and reporting depth</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Planning and forecasting capability</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Data and ERP integration</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Total cost of ownership, five years out</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Implementation complexity and risk</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Vendor viability and product roadmap</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Fit with your team's skills and appetite</li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Platform comparison table -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-eyebrow">Platform comparison</div>
-      <div class="section-title">How the leading platforms compare</div>
-      <p class="section-sub">A high-level comparison across key dimensions — our advisory process goes much deeper, tailored to your specific requirements.</p>
-      <div class="compare-table-wrap">
-        <table class="compare-table">
-          <thead>
-            <tr>
-              <th>Platform</th>
-              <th>Financial consolidation</th>
-              <th>Planning & budgeting</th>
-              <th>Operational planning</th>
-              <th>Best for</th>
-              <th>Deployment</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>OneStream XF</td>
-              <td><i class="ti ti-check check-yes"></i> Excellent</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td>Unified platform, complex consolidation</td>
-              <td>Cloud / on-prem</td>
-            </tr>
-            <tr>
-              <td>Anaplan</td>
-              <td><i class="ti ti-minus check-partial"></i> Limited</td>
-              <td><i class="ti ti-check check-yes"></i> Excellent</td>
-              <td><i class="ti ti-check check-yes"></i> Excellent</td>
-              <td>Complex connected planning, enterprise scale</td>
-              <td>Cloud only</td>
-            </tr>
-            <tr>
-              <td>Oracle EPM Cloud</td>
-              <td><i class="ti ti-check check-yes"></i> Excellent</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td>Oracle ERP integration, statutory reporting</td>
-              <td>Cloud</td>
-            </tr>
-            <tr>
-              <td>SAP EPM / Group Reporting</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td><i class="ti ti-minus check-partial"></i> Moderate</td>
-              <td>SAP ERP environments, S/4HANA</td>
-              <td>Cloud / on-prem</td>
-            </tr>
-            <tr>
-              <td>Board</td>
-              <td><i class="ti ti-minus check-partial"></i> Moderate</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td>Combined BI & planning, mid-market</td>
-              <td>Cloud / on-prem / hybrid</td>
-            </tr>
-            <tr>
-              <td>IBM Planning Analytics</td>
-              <td><i class="ti ti-minus check-partial"></i> Moderate</td>
-              <td><i class="ti ti-check check-yes"></i> Excellent</td>
-              <td><i class="ti ti-check check-yes"></i> Strong</td>
-              <td>Complex calculations, financial services</td>
-              <td>Cloud / on-prem</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">The platform landscape</p>
+      <h2>There is no single best platform, only the best fit</h2>
+      <p class="lede">The market falls into a handful of categories, each strong for different reasons. We know them all, and we match your requirements to the right category before we ever name a product.</p>
     </div>
-  </section>
+    <div class="cards cards--3">
+      <div class="card reveal"><h4>Unified close &amp; consolidation</h4><p>Platforms built first for fast, controlled consolidation, with planning and reporting on the same engine. Often the right answer when the close is the pain.</p></div>
+      <div class="card reveal"><h4>Connected planning</h4><p>Cloud-native, multidimensional platforms for flexible, large-scale planning across finance, sales and supply chain.</p></div>
+      <div class="card reveal"><h4>ERP-native EPM suites</h4><p>EPM that integrates deeply with a particular ERP, for organisations standardised on one vendor who want native reporting and consolidation.</p></div>
+      <div class="card reveal"><h4>Combined BI &amp; planning</h4><p>Platforms that merge business intelligence with planning and predictive analytics, often no-code, for teams that want self-service.</p></div>
+      <div class="card reveal"><h4>High-performance engines</h4><p>Highly flexible, multidimensional calculation engines for complex, calculation-heavy models and bespoke logic.</p></div>
+      <div class="card reveal"><h4>Cloud analytics &amp; planning</h4><p>Modern SaaS platforms combining planning, analytics and reporting, for organisations moving off spreadsheets and legacy tools.</p></div>
+    </div>
+    <p class="disclaimer reveal">We stay current across every credible product in these categories. Which one we recommend depends entirely on you, never on us.</p>
+  </div>
+</section>
 
-  <!-- Selection framework -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-eyebrow">Our selection framework</div>
-      <div class="section-title">How we find the right platform for you</div>
-      <p class="section-sub">Our structured selection process removes guesswork and vendor bias — giving you a defensible, well-evidenced recommendation that your stakeholders can get behind.</p>
-      <div class="framework-steps">
-        <div class="framework-step">
-          <div class="fs-num">1</div>
-          <h4>Requirements discovery</h4>
-          <p>Structured workshops with finance, IT, and business stakeholders to capture functional, technical, and commercial requirements.</p>
-        </div>
-        <div class="framework-step">
-          <div class="fs-num">2</div>
-          <h4>Current state assessment</h4>
-          <p>Review of existing processes, data landscape, ERP environment, and pain points — so the solution addresses root causes, not symptoms.</p>
-        </div>
-        <div class="framework-step">
-          <div class="fs-num">3</div>
-          <h4>Longlist & scoring</h4>
-          <p>Independent scoring of all viable platforms against your weighted requirements criteria — with a clear audit trail for governance and sign-off.</p>
-        </div>
-        <div class="framework-step">
-          <div class="fs-num">4</div>
-          <h4>Vendor demos</h4>
-          <p>Scripted demonstrations against your specific scenarios — not vendor-led slide decks — so you see how each platform handles your actual processes.</p>
-        </div>
-        <div class="framework-step">
-          <div class="fs-num">5</div>
-          <h4>Business case & TCO</h4>
-          <p>Total cost of ownership modelling across shortlisted platforms — licencing, implementation, ongoing support, and internal resource — for a like-for-like comparison.</p>
+<section class="section" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="split rev">
+      <div class="reveal">
+        <div class="panel panel--ink">
+          <p class="eyebrow" style="color:var(--on-ink-accent)">Delivery ecosystem</p>
+          <h3 style="color:var(--hero-text);font-size:1.5rem">Independent advice, real delivery reach</h3>
+          <p style="color:var(--hero-muted);margin-top:.8rem">Advisory doesn't end at a recommendation. We take no fees or licence margin from the software vendors, so the recommendation stays unbiased. When it's time to build, we deliver in-house for SAP EPM, and for the other leading platforms, including OneStream, Anaplan and Oracle EPM, we bring in trusted implementation specialists who are the vendors' own certified partners.</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Capabilities -->
-  <section class="section" id="capabilities">
-    <div class="section-inner">
-      <div class="section-eyebrow">Our capabilities</div>
-      <div class="section-title">What we deliver — from advisory to go-live</div>
-      <p class="section-sub">Our team covers the full EPM lifecycle — from strategy and selection through to build, testing, training, and ongoing support.</p>
-      <div class="capability-grid">
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-clipboard-list"></i></div>
-          <h3>EPM strategy & roadmap</h3>
-          <p>We help you define your EPM vision, build the business case, gain stakeholder alignment, and produce a phased roadmap that balances ambition with pragmatism.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">All platforms</span>
-            <span class="cap-platform">Vendor-neutral</span>
-          </div>
-        </div>
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-scale"></i></div>
-          <h3>Platform selection & procurement</h3>
-          <p>Independent requirements-led platform evaluation, vendor RFP management, scripted demonstrations, TCO modelling, and contract negotiation support.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">All platforms</span>
-            <span class="cap-platform">RFP management</span>
-          </div>
-        </div>
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-topology-star"></i></div>
-          <h3>Solution architecture & design</h3>
-          <p>Detailed solution design covering data model, hierarchy design, calculation logic, security model, integration architecture, and reporting framework.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">OneStream</span>
-            <span class="cap-platform">Anaplan</span>
-            <span class="cap-platform">Oracle EPM</span>
-            <span class="cap-platform">SAP</span>
-          </div>
-        </div>
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-code"></i></div>
-          <h3>Implementation & build</h3>
-          <p>End-to-end platform implementation — configuration, calculation build, integration development, report design, and user acceptance testing — delivered in structured sprints.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">OneStream</span>
-            <span class="cap-platform">Anaplan</span>
-            <span class="cap-platform">Oracle EPM</span>
-            <span class="cap-platform">IBM TM1</span>
-          </div>
-        </div>
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-transfer"></i></div>
-          <h3>Migration & consolidation</h3>
-          <p>Migration from legacy EPM platforms — Hyperion, HFM, Cognos, Adaptive — including data migration, model translation, parallel running, and cutover planning.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">From Hyperion</span>
-            <span class="cap-platform">From HFM</span>
-            <span class="cap-platform">From Adaptive</span>
-            <span class="cap-platform">From Cognos</span>
-          </div>
-        </div>
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-plug-connected"></i></div>
-          <h3>ERP & data integration</h3>
-          <p>Design and build of data integrations between your EPM platform and source systems — SAP, Oracle, Dynamics, and other ERP/GL systems — ensuring accurate, automated data flows.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">SAP</span>
-            <span class="cap-platform">Oracle</span>
-            <span class="cap-platform">Dynamics 365</span>
-            <span class="cap-platform">Custom APIs</span>
-          </div>
-        </div>
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-school"></i></div>
-          <h3>Training & change management</h3>
-          <p>Role-based training programmes, system administrator enablement, process documentation, and change management support to drive adoption across finance and business teams.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">All platforms</span>
-            <span class="cap-platform">Change management</span>
-          </div>
-        </div>
-
-        <div class="capability-card">
-          <div class="cap-icon"><i class="ti ti-settings-automation"></i></div>
-          <h3>Managed service & optimisation</h3>
-          <p>Ongoing platform support, model maintenance, release management, and continuous optimisation — so your EPM environment evolves with your business rather than becoming stale.</p>
-          <div class="cap-platforms">
-            <span class="cap-platform">All platforms</span>
-            <span class="cap-platform">Managed service</span>
-          </div>
-        </div>
-
+      <div class="reveal">
+        <p class="eyebrow">Our advisory approach</p>
+        <h2 style="font-size:clamp(1.8rem,3.4vw,2.6rem)">We don't sell platforms. We find the right one for you.</h2>
+        <ul class="feature-list">
+<li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>No vendor partnerships that bias us</strong><span>Certified across platforms, with no referral fees or licence margin to protect.</span></div></li><li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Finance and IT expertise combined</strong><span>Qualified finance professionals alongside solution architects and senior engineers.</span></div></li><li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>Honest about complexity and cost</strong><span>Realistic implementation costs and timelines, not the vendor's best case.</span></div></li><li><span class="fi"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg></span><div><strong>With you from selection to go-live</strong><span>Advisory that extends through procurement, vendor management and delivery.</span></div></li>
+        </ul>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Engagement models -->
-  <section class="section" id="services">
-    <div class="section-inner">
-      <div class="section-eyebrow">How we engage</div>
-      <div class="section-title">Flexible to fit where you are in your journey</div>
-      <p class="section-sub">Whether you need independent advisory, a full implementation partner, or ongoing support for an existing platform — we have an engagement model to match.</p>
-      <div class="engage-grid">
-
-        <div class="engage-card">
-          <div class="engage-label">Advisory</div>
-          <h3>Independent EPM advisory</h3>
-          <p>Vendor-neutral strategy, requirements definition, and platform selection. Ideal if you need expert guidance without a commitment to implementation.</p>
-          <ul class="engage-list">
-            <li><i class="ti ti-check"></i> Requirements workshops</li>
-            <li><i class="ti ti-check"></i> Platform evaluation & scoring</li>
-            <li><i class="ti ti-check"></i> TCO and business case</li>
-            <li><i class="ti ti-check"></i> Vendor RFP management</li>
-          </ul>
-        </div>
-
-        <div class="engage-card featured">
-          <div class="engage-label">Most popular</div>
-          <h3>Advisory + implementation</h3>
-          <p>We select the right platform and deliver it — giving you continuity from requirements through to go-live with a team that already understands your organisation.</p>
-          <ul class="engage-list">
-            <li><i class="ti ti-check"></i> Full selection process</li>
-            <li><i class="ti ti-check"></i> End-to-end implementation</li>
-            <li><i class="ti ti-check"></i> Training & change management</li>
-            <li><i class="ti ti-check"></i> Hypercare & post-go-live support</li>
-          </ul>
-        </div>
-
-        <div class="engage-card">
-          <div class="engage-label">Implementation</div>
-          <h3>Platform implementation</h3>
-          <p>You've chosen your platform — we deliver it. Fixed-scope implementation with clear milestones, structured testing, and documented handover.</p>
-          <ul class="engage-list">
-            <li><i class="ti ti-check"></i> Solution design & build</li>
-            <li><i class="ti ti-check"></i> Data integration</li>
-            <li><i class="ti ti-check"></i> UAT & go-live support</li>
-            <li><i class="ti ti-check"></i> Knowledge transfer</li>
-          </ul>
-        </div>
-
-        <div class="engage-card">
-          <div class="engage-label">Ongoing</div>
-          <h3>Managed service & support</h3>
-          <p>Ongoing management, model maintenance, user support, and continuous improvement for existing EPM environments — with a named consultant who knows your platform.</p>
-          <ul class="engage-list">
-            <li><i class="ti ti-check"></i> Monthly support retainer</li>
-            <li><i class="ti ti-check"></i> Model maintenance & releases</li>
-            <li><i class="ti ti-check"></i> Performance optimisation</li>
-            <li><i class="ti ti-check"></i> User training on demand</li>
-          </ul>
-        </div>
-
-      </div>
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Selection framework</p>
+      <h2>A structured, defensible process</h2>
+      <p class="lede">Every recommendation is evidence-based and audit-ready, so your board can see exactly why the chosen platform won.</p>
     </div>
-  </section>
-
-  <!-- How we work -->
-<div class="section" id="process">
-        <div class="section-eyebrow">HOW WE WORK</div>
-        <div class="section-title">A Clear, Structured Approach</div>
-        <p class="section-sub">We follow a proven four-step process so there are no surprises — just a well-delivered
-            outcome.</p>
-        <div class="process-grid">
-            <div class="process-step">
-                <div class="step-num">1</div>
-                <h4>CPM/EPM Strategy & Readiness</h4>
-                <p>We start by understanding how finance actually operates today — planning cycles, consolidation and
-                    close processes, reporting hierarchies, data lineage, and where the pain really lives. We assess
-                    whether the underlying problem is process, data, or technology (often it's not the tool). This gives
-                    you a clear-eyed view of what "good" looks like before any vendor conversation begins.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-num">2</div>
-                <h4>Vendor Selection</h4>
-                <p>We run a structured, independent selection process across the leading CPM/EPM platforms — Anaplan,
-                    OneStream, Oracle EPM, SAP, and others — matched against your actual requirements, not a
-                    generic checklist. We manage RFPs, demos, and reference calls, and we give you a clear, defensible
-                    recommendation. You choose the platform; we make sure it's the right choice for the right reasons.
-                </p>
-            </div>
-            <div class="process-step">
-                <div class="step-num">3</div>
-                <h4>Target Operating Model & Process Design</h4>
-                <p>Before implementation starts, we design how finance will actually run on the new platform — process
-                    flows, controls, ownership, data governance, and reporting structure. This is the step most projects
-                    skip, and it's the single biggest predictor of whether an implementation succeeds or becomes
-                    shelfware.</p>
-            </div>
-            <div class="process-step">
-                <div class="step-num">4</div>
-                <h4>Implementation Assurance</h4>
-                <p>Whether we deliver the build ourselves or you engage a specialist implementation partner, we stay
-                    engaged as your independent quality check — reviewing design decisions, holding the delivery team to
-                    the agreed process design, and protecting the business case we helped you build. You're never
-                    negotiating alone with the people building the system.</p>
-            </div>
-        </div>
+    <div class="steps reveal">
+      <div class="step"><span class="n">01</span><div><h4>Requirements discovery</h4><p>Workshops with finance, IT and business stakeholders to capture what you actually need.</p></div></div>
+      <div class="step"><span class="n">02</span><div><h4>Current-state assessment</h4><p>Review existing processes, data, ERP landscape and the real pain points behind the project.</p></div></div>
+      <div class="step"><span class="n">03</span><div><h4>Longlist &amp; scoring</h4><p>Independent platform scoring against your requirements, with a transparent audit trail.</p></div></div>
+      <div class="step"><span class="n">04</span><div><h4>Vendor demos</h4><p>Scripted demonstrations against your scenarios, not the vendor's polished slide deck.</p></div></div>
+      <div class="step"><span class="n">05</span><div><h4>Business case &amp; TCO</h4><p>Total cost modelling across the shortlist, and a recommendation your board can stand behind.</p></div></div>
     </div>
+  </div>
+</section>
 
-  <!-- Why Si BCS -->
-  <section class="section">
-    <div class="section-inner">
-      <div class="section-eyebrow-lower">WHY Si BCS</div>
-      <div class="section-title">What working with us looks like</div>
-      <div class="why-grid">
-        <div class="why-item">
-          <i class="ti ti-scale"></i>
-          <h4>Genuinely vendor-neutral</h4>
-          <p>We hold certifications across all major EPM platforms and take no licence fees or vendor margin — so our recommendation is always independent.</p>
-        </div>
-        <div class="why-item">
-          <i class="ti ti-calculator"></i>
-          <h4>Finance and technology, together</h4>
-          <p>Our team combines qualified finance professionals with platform architects — we understand your processes as well as the tools designed to support them.</p>
-        </div>
-        <div class="why-item">
-          <i class="ti ti-eye"></i>
-          <h4>Honest about what things cost</h4>
-          <p>We give you a realistic view of implementation complexity, timescales, and total cost — not a vendor's best-case estimate designed to get you to sign.</p>
-        </div>
-        <div class="why-item">
-          <i class="ti ti-school"></i>
-          <h4>We build your team's capability</h4>
-          <p>We train your finance and IT team throughout the project — so when we leave, you own the platform and can extend it yourself.</p>
-        </div>
-      </div>
+<section class="section" style="background:var(--surface-2)">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <p class="eyebrow">Engagement models</p>
+      <h2>Work with us the way that suits you</h2>
     </div>
-  </section>
+    <div class="cards">
+      <div class="card fin reveal"><h4>Independent EPM advisory</h4><p>Vendor-neutral guidance without an implementation commitment: requirements workshops, platform evaluation and scoring, TCO and business case, RFP management.</p></div>
+      <div class="card fin reveal"><h4>Advisory + implementation</h4><p>Platform selection plus delivery, with full continuity: end-to-end implementation, training and change, hypercare and post-go-live support.</p></div>
+      <div class="card fin reveal"><h4>Platform implementation</h4><p>Already chosen your platform? Solution design and build, data integration, UAT and go-live, and full knowledge transfer.</p></div>
+      <div class="card fin reveal"><h4>Managed service &amp; support</h4><p>Ongoing management of your existing environment: monthly retainer, model maintenance and releases, performance optimisation, on-demand training.</p></div>
+    </div>
+  </div>
+</section>
 
-  <div class="cta-section" id="contact">
-    <div class="cta-inner">
-      <div class="section-eyebrow" style="text-align:center;">GET IN TOUCH</div>
-      <h2>Ready to about CPM / EPM?</h2>
+<section class="section">
+  <div class="wrap">
+    <div class="cta-band reveal">
+      <h2>Ready to choose the right EPM platform?</h2>
       <p>Tell us a little about your project and we'll be in touch within one business day.</p>
-      <form class="contact-form" onsubmit="return false;">
-        <input type="text" placeholder="Your name" aria-label="Your name" required />
-        <input type="email" placeholder="Work email" aria-label="Work email" required />
-        <input type="text" placeholder="Company name" aria-label="Company name" />
-        <select aria-label="Service of interest">
-          <option value="" disabled selected>Select service of interest</option>
-          <option>General Azure consultancy</option>
-          <option>Copilot readiness</option>
-          <option>Cloud readiness</option>
-          <option>Microsoft Fabric</option>
-          <option>Microsoft Power BI</option>
-          <option>AI</option>
-          <option>Infrastructure as Code</option>
-          <option>Backup as a Service</option>
-          <option>Managed service</option>
-          <option>Azure Foundry</option>
-          <option>Azure Factory</option>
-          <option>SAP EPM</option>
-          <option>Other / Multiple</option>
-        </select>
-        <textarea placeholder="Briefly describe what you're looking to achieve..."
-          aria-label="Project description"></textarea>
-        <button type="submit" class="submit-btn">Send message <i class="ti ti-arrow-right"></i></button>
-      </form>
+      <div class="row">
+        <a class="btn btn--onink" href="index.html#contact">Start a conversation <svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--onink-ghost" href="mailto:info@sibcs.co.uk">info@sibcs.co.uk</a>
+      </div>
     </div>
   </div>
-
-  <footer>
-    <span class="footer-brand">Si BCS Ltd.</span>
-    <span class="footer-copy">&copy; 2026 Si BCS Ltd. All rights reserved.</span>
-    <div class="footer-links">
-      <a href="./privacy.html">Privacy policy</a>
-      <a href="./terms.html">Terms</a>
-      <a href="mailto:info@sibcs.co.uk">info@sibcs.co.uk</a>
+</section>
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html">
+          <svg class="brand-logo" viewBox="146.25 38.75 489.75 148.50" role="img" aria-label="Si BCS" focusable="false"><path fill="currentColor" fill-rule="evenodd" d="M 252.50 105.00 L 251.50 105.75  L 251.50 159.75  L 271.25 160.00  L 271.75 159.50  L 271.75 105.75  L 271.25 105.25  ZM 367.75 70.75 L 367.25 71.50  L 367.25 159.50  L 421.75 159.75  L 427.25 158.75  L 433.50 156.50  L 436.75 154.75  L 439.50 152.50  L 442.75 148.50  L 445.50 142.25  L 446.50 135.75  L 445.75 128.25  L 443.50 123.00  L 440.50 119.25  L 434.75 115.25  L 429.75 113.25  L 430.25 112.00  L 432.50 111.25  L 437.50 107.50  L 439.50 105.00  L 441.75 99.75  L 442.50 95.50  L 441.75 87.25  L 439.75 82.00  L 438.00 79.50  L 435.50 77.00  L 431.25 74.25  L 426.25 72.25  L 421.00 71.00  L 412.00 70.50  ZM 388.75 123.75 L 389.75 122.75  L 414.50 122.75  L 417.25 123.50  L 420.00 124.75  L 423.00 127.75  L 424.00 130.25  L 424.00 135.25  L 422.75 138.00  L 420.50 140.25  L 416.00 142.00  L 389.75 142.25  L 389.00 141.75  ZM 389.00 89.25 L 390.00 88.25  L 413.75 88.50  L 417.50 90.50  L 419.00 92.25  L 420.25 95.00  L 420.25 99.25  L 418.75 102.50  L 416.75 104.50  L 411.75 106.25  L 390.00 106.25  L 389.00 105.50  ZM 570.75 70.00 L 567.00 71.25  L 559.75 75.50  L 555.25 79.75  L 553.00 83.00  L 551.00 87.75  L 550.00 93.00  L 550.00 99.75  L 551.25 105.50  L 553.25 109.75  L 555.25 112.50  L 561.00 117.25  L 565.00 119.25  L 574.50 122.50  L 590.00 126.25  L 596.00 128.75  L 598.00 130.50  L 599.25 132.50  L 599.75 134.25  L 599.25 138.00  L 597.25 140.50  L 593.75 142.25  L 589.00 143.25  L 582.00 143.25  L 574.25 141.75  L 569.25 140.00  L 562.75 136.75  L 556.25 132.25  L 555.25 133.25  L 547.00 147.75  L 547.00 148.75  L 552.50 152.75  L 560.00 156.75  L 569.50 159.75  L 574.50 160.75  L 584.00 161.50  L 596.75 160.75  L 604.75 158.50  L 609.25 156.50  L 613.75 153.50  L 618.00 148.75  L 620.50 144.25  L 622.00 137.75  L 622.00 128.25  L 620.50 123.00  L 618.00 119.00  L 614.25 115.25  L 607.25 111.00  L 600.75 108.75  L 582.00 104.25  L 576.50 102.00  L 572.75 98.00  L 572.25 95.75  L 572.50 93.00  L 575.50 89.25  L 578.75 87.75  L 588.25 87.25  L 592.50 87.75  L 602.25 91.00  L 611.25 96.00  L 613.75 92.25  L 620.50 79.75  L 620.50 79.00  L 612.25 74.00  L 605.25 71.25  L 597.75 69.25  L 589.25 68.25  L 580.75 68.25  ZM 493.25 69.00 L 482.50 72.25  L 473.50 77.50  L 467.00 83.50  L 461.50 91.25  L 458.25 98.50  L 456.25 106.00  L 455.50 111.75  L 455.50 119.50  L 457.25 129.75  L 461.50 140.00  L 466.00 146.25  L 474.25 153.75  L 481.25 157.75  L 491.00 160.75  L 497.50 161.75  L 508.00 161.75  L 518.75 159.75  L 526.25 156.75  L 532.00 153.25  L 539.50 146.50  L 539.50 145.50  L 527.50 131.75  L 526.50 132.00  L 522.25 136.00  L 518.25 138.75  L 510.50 141.75  L 507.50 142.25  L 499.50 142.25  L 493.75 141.00  L 490.50 139.50  L 486.25 136.25  L 483.50 133.25  L 479.75 126.75  L 477.75 119.75  L 477.75 111.00  L 480.00 103.00  L 483.50 97.00  L 487.25 93.25  L 492.75 89.75  L 496.75 88.50  L 502.75 87.75  L 511.00 88.75  L 513.75 89.75  L 519.50 93.00  L 523.25 96.00  L 526.25 99.50  L 527.00 99.50  L 539.75 83.50  L 535.00 79.00  L 529.50 75.00  L 522.25 71.25  L 518.75 70.00  L 514.25 69.00  L 505.50 68.25  ZM 183.00 70.00 L 177.00 72.50  L 172.50 75.50  L 168.25 79.75  L 165.00 85.00  L 163.25 90.25  L 162.75 96.00  L 163.25 102.50  L 164.75 107.25  L 167.25 111.50  L 170.25 114.75  L 173.75 117.25  L 177.75 119.25  L 188.00 122.75  L 202.50 126.00  L 209.00 128.75  L 211.25 131.00  L 212.25 132.75  L 212.25 136.75  L 211.00 139.25  L 207.25 142.00  L 201.75 143.25  L 194.75 143.25  L 188.75 142.25  L 183.75 140.75  L 177.00 137.75  L 169.75 133.00  L 169.00 133.00  L 160.25 148.50  L 161.25 149.75  L 165.50 152.75  L 174.75 157.50  L 181.75 159.75  L 187.00 160.75  L 195.00 161.50  L 202.75 161.50  L 209.50 160.75  L 216.75 158.75  L 222.00 156.25  L 226.00 153.50  L 230.00 149.25  L 232.75 144.50  L 234.75 137.00  L 234.75 128.50  L 232.75 122.50  L 231.00 119.50  L 227.75 116.00  L 221.25 111.75  L 212.00 108.50  L 196.00 104.75  L 188.75 101.75  L 185.00 97.75  L 184.75 93.50  L 185.50 91.75  L 187.25 89.75  L 190.75 88.00  L 195.75 87.25  L 200.50 87.25  L 204.75 87.75  L 210.50 89.50  L 216.50 92.00  L 223.50 96.00  L 232.75 79.75  L 232.75 79.00  L 229.00 76.25  L 223.00 73.25  L 214.00 70.00  L 211.25 69.75  L 210.50 69.25  L 202.50 68.25  L 192.75 68.25  Z"/><path fill="#18E0CE" fill-rule="evenodd" d="M 251.50 79.75 L 251.50 97.50  L 271.25 98.00  L 272.00 97.50  L 272.00 80.00  L 271.50 79.50  ZM 319.25 52.75 L 318.75 53.50  L 319.00 172.50  L 319.75 173.25  L 321.25 173.25  L 322.00 171.75  L 321.75 53.25  L 321.25 52.75  Z"/></svg>
+        </a>
+        <p>Financial data and systems, connected. Vendor-neutral EPM advisory and technical delivery for the offices of the CFO and CIO.</p>
+      </div>
+      <div class="foot-col">
+        <h5>Financial Performance</h5>
+        <a href="cpm-epm-advisory.html">CPM / EPM Advisory</a>
+        <a href="sap-epm-consultancy.html">SAP EPM Consultancy</a>
+      </div>
+      <div class="foot-col">
+        <h5>Data, Cloud &amp; AI</h5>
+        <a href="data-lifecycle.html">Data Platform</a>
+        <a href="financial-cloud.html">Financial Cloud &amp; Secure Access</a>
+        <a href="automation-ai.html">AI &amp; Automation</a>
+      </div>
+      <div class="foot-col">
+        <h5>Company</h5>
+        <a href="about-us.html">About us</a>
+        <a href="insights.html">Insights</a>
+        <a href="index.html#approach">Approach</a>
+        <a href="index.html#contact">Get in touch</a>
+        <a href="mailto:info@sibcs.co.uk">info@sibcs.co.uk</a>
+      </div>
     </div>
-  </footer>
-
+    <div class="foot-bottom">
+      <p>© <span id="yr">2026</span> Si BCS Ltd. All rights reserved.</p>
+      <div class="legal">
+        <a href="privacy.html">Privacy &amp; Cookies</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+    <p class="foot-legal">Si BCS Ltd is registered in England and Wales, company number 15296084. Registered office: 20 Wenlock Road, London, N1 7GU.</p>
+  </div>
+</footer>
+<script src="app.js"></script>
 </body>
 </html>

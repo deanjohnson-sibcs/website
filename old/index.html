@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Si BCS — Financial Data, Connected</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/script.js"></script>
+</head>
+
+<body>
+
+    <nav>
+        <a href="#" class="nav-brand">
+            <span><img src="./images/logo.png" alt="Si BCS" style="width:150px;height:40px;" float="right"></span>
+            <i class="ti ti-arrow-up" style="font-size: 1.50em;"></i>
+        </a>
+        <div class="nav-links">
+            <a href="./index.html">Home</a>
+            <div id="dropdown" class="dropdown" onclick="openNav()">
+                <button id="dropdown-btn" class="dropbtn"> Solutions
+                    <i class="ti ti-caret-down"></i>
+                </button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a href="./data-lifecycle.html">Data Lifecycle Management</a>
+                    <a href="./automation-ai.html">AI, Agents &amp; Automation</a>
+                    <a href="./modern-workspace.html">Modern Workspace</a>
+                </div>
+            </div>
+            <div id=" dropdown" class="dropdown" onclick="openNav()">
+                <button id="dropdown-btn" class="dropbtn">How we help
+                    <i class="ti ti-caret-down"></i>
+                </button>
+                <div id="dropdown-content" class="dropdown-content">
+                    <a href="./cpm-epm-advisory.html">CPM / EPM Advisory</a>
+                    <a href="./sap-epm-consultancy.html">SAP Technical Consultancy</a>
+                    <a href="./azure-consultancy.html">Public Cloud Advisory</a>
+                </div>
+            </div>
+            <a href="./about-us.html">About Us</a>
+            <a href="#contact" class="nav-cta">Get in touch</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Financial data and systems, <em>connected.</em></h1>
+        <p>From fragmented financial data to a connected, decision-ready platform. We guide the offices of the CFO and
+            CIO from vendor selection through implementation — across SAP EPM, Anaplan, OneStream, Oracle EPM, Microsoft
+            Fabric, and Power BI. One partner, start to finish.</p>
+    </section>
+
+    <div class="trust-bar">
+        <div class="trust-item"><i class="ti ti-shield-check"></i> Advisory Services</div>
+        <div class="trust-item"><i class="ti ti-checks"></i> Trusted Partner</div>
+        <div class="trust-item"><i class="ti ti-building"></i> SME to Enterprise</div>
+        <div class="trust-item"><i class="ti ti-map-pin"></i> Customer First</div>
+    </div>
+
+    <div class="section" id="solutions">
+        <div class="section-eyebrow">SOLUTIONS</div>
+        <div class="section-title">What We Offer</div>
+        <p class="section-sub">Solutions designed to transform your entire financial data landscape, from data ingestion
+            to actionable insights. Secure, scalable, and future-proof.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="ti ti-info-square-rounded"></i></div>
+                <h3>CPM / EPM Advisory</h3>
+                <p>Helping organizations optimize their financial planning and analysis processes.</p>
+                <p><a href="./cpm-epm-advisory.html" class="service-card-button">More info</a></p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="ti ti-binary"></i></div>
+                <h3>Data Lifecycle Management</h3>
+                <p>From raw data to governed, AI-powered insight, harnessing the power of Microsoft Fabric, Power BI,
+                    and Purview</p>
+                <p><a href="./data-lifecycle.html" class="service-card-button">More info</a></p>
+            </div>
+        </div>
+        <br>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon"><i class="ti ti-file-text-ai"></i></div>
+                <h3>AI, Agents &amp; Automation</h3>
+                <p>Using automation to handle the repeatable, AI to provide the insight, and Agentic AI to execute
+                    judgment-based tasks.</p>
+                <p><a href="./automation-ai.html" class="service-card-button">More info</a></p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon"><i class="ti ti-device-laptop"></i></div>
+                <h3>Modern Workspace</h3>
+                <p>Provide a secure, performant and consistent modern workspace for you users with Microsoft AVD and
+                    Nerdio.</p>
+                <p><a href="./modern-workspace.html" class="service-card-button">More info</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="solutions">
+        <div class="section-eyebrow">WHAT WE DO</div>
+        <div class="section-title">How We Help Our Customers</div>
+        <p class="section-sub">Comprehensive services tailored to meet the unique needs of each client. From strategy to
+            implementation, we're with you every step of the way.</p>
+        <div class="services-grid">
+
+            <div class="service-card">
+                <div class="service-icon"><i class="ti ti-timeline"></i></div>
+                <h3>SAP EPM Technical Consultancy</h3>
+                <p>From cloud migration to implementation and optimization, we provide comprehensive SAP technical
+                    consulting services for SAP HANA / BW4HANA</p>
+                <p><a href="./sap-epm-consultancy.html" class="service-card-button">More info</a></p>
+            </div>
+
+            <div class="service-card">
+                <div class="service-icon"><i class="ti ti-cloud-data-connection"></i></div>
+                <h3>Public Cloud Advisory</h3>
+                <p>Providing strategic guidance and advisory services for utilizing public cloud for your financial
+                    operations.</p>
+                <p><a href="./azure-consultancy.html" class="service-card-button">More info</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section" id="why">
+        <div class="section-eyebrow-lower">WHY Si BCS</div>
+        <div class="section-title">What Sets Us Apart</div>
+        <div class="why-grid">
+            <div class="why-item">
+                <i class="ti ti-file-spreadsheet"></i>
+                <h4>Vendor-neutral, just the best solution for you</h4>
+                <p>We don't take sides — we work with the best tools and technologies, regardless of vendor.</p>
+            </div>
+            <div class="why-item">
+                <i class="ti ti-report-money"></i>
+                <h4>We speak finance, not just software</h4>
+                <p>We understand the financial implications of technology decisions and help you make choices that align
+                    with your business objectives.</p>
+            </div>
+            <div class="why-item">
+                <i class="ti ti-users-group"></i>
+                <h4>We stay for the whole journey, as a partner</h4>
+                <p>Strategy, selection, design, and delivery oversight — one team, one thread of accountability, from
+                    first conversation to go-live and beyond.</p>
+            </div>
+            <div class="why-item">
+                <i class="ti ti-server-2"></i>
+                <h4>Platform Breadth</h4>
+                <p>Deep, current experience across Anaplan, OneStream, Oracle, EPM and SAP means our recommendations
+                    reflect the
+                    real market, not the two vendors we happen to know best.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="cta-section" id="contact">
+        <div class="cta-inner">
+            <div class="section-eyebrow" style="text-align:center;">GET IN TOUCH</div>
+            <h2>Ready to talk?</h2>
+            <p>Tell us a little about your project and we'll be in touch within one business day.</p>
+            <form class="contact-form" onsubmit="return false;">
+                <input type="text" placeholder="Your name" aria-label="Your name" required />
+                <input type="email" placeholder="Work email" aria-label="Work email" required />
+                <input type="text" placeholder="Company name" aria-label="Company name" />
+                <select aria-label="Service of interest">
+                    <option value="" disabled selected>Select service of interest</option>
+                    <option>General Azure consultancy</option>
+                    <option>Copilot readiness</option>
+                    <option>Cloud readiness</option>
+                    <option>Microsoft Fabric</option>
+                    <option>Microsoft Power BI</option>
+                    <option>AI</option>
+                    <option>Infrastructure as Code</option>
+                    <option>Backup as a Service</option>
+                    <option>Managed service</option>
+                    <option>Azure Foundry</option>
+                    <option>Azure Factory</option>
+                    <option>SAP EPM</option>
+                    <option>Other / Multiple</option>
+                </select>
+                <textarea placeholder="Briefly describe what you're looking to achieve..."
+                    aria-label="Project description"></textarea>
+                <button type="submit" class="submit-btn">Send message <i class="ti ti-arrow-right"></i></button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <span class="footer-brand">Si BCS Ltd.</span>
+        <span class="footer-copy">&copy; 2026 Si BCS Ltd. All rights reserved.</span>
+        <div class="footer-links">
+            <a href="./privacy.html">Privacy policy</a>
+            <a href="./terms.html">Terms</a>
+            <a href="mailto:info@sibcs.co.uk">info@sibcs.co.uk</a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

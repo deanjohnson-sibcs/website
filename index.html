@@ -17,6 +17,7 @@
 <meta property="og:description" content="Si BCS is a UK consultancy that connects the office of the CFO and the office of the CIO, vendor-neutral EPM advisory, plus the technical expertise to select, build, integrate and host your financial platforms.">
 <meta property="og:image" content="https://deanjohnson-sibcs.github.io/website/og-image.png">
 <meta property="og:url" content="https://deanjohnson-sibcs.github.io/website/">
+<link rel="canonical" href="https://deanjohnson-sibcs.github.io/website/">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Si BCS · Financial data and systems, connected">
 <meta name="twitter:description" content="Vendor-neutral EPM advisory for the office of the CFO and the CIO, plus the technical expertise to select, build, integrate and host your financial platforms.">
@@ -25,6 +26,9 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Hanken+Grotesk:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"ProfessionalService","name":"Si BCS","legalName":"Si BCS Ltd","url":"https://deanjohnson-sibcs.github.io/website/","logo":"https://deanjohnson-sibcs.github.io/website/icon-512.png","image":"https://deanjohnson-sibcs.github.io/website/og-image.png","description":"Vendor-neutral EPM advisory for the office of the CFO and the CIO, plus the technical expertise to select, build, integrate and host financial platforms.","areaServed":"GB","email":"info@sibcs.co.uk","address":{"@type":"PostalAddress","streetAddress":"20 Wenlock Road","addressLocality":"London","postalCode":"N1 7GU","addressCountry":"GB"},"founder":[{"@type":"Person","name":"Simon Bell","jobTitle":"Founder & Managing Director"},{"@type":"Person","name":"Ahtishaam Khan","jobTitle":"Partner & CTO"}]}
+</script>
 </head>
 <body>
 
@@ -38,7 +42,7 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="index.html" class="active">Home</a>
       <div class="nav-item">
-        <button aria-haspopup="true">What we do
+        <button type="button" aria-haspopup="true">What we do
           <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M6 9l6 6 6-6"/></svg>
         </button>
         <div class="mega" role="menu">
@@ -57,12 +61,12 @@
     </nav>
 
     <div class="nav-cta">
-      <button class="theme-toggle" data-theme-toggle aria-label="Toggle colour theme">
+      <button type="button" class="theme-toggle" data-theme-toggle aria-label="Toggle colour theme">
         <svg class="moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
         <svg class="sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
       </button>
       <a class="btn btn--primary" href="index.html#contact">Get in touch</a>
-      <button class="menu-btn" data-menu-toggle aria-label="Open menu">
+      <button type="button" class="menu-btn" data-menu-toggle aria-label="Open menu">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
       </button>
     </div>
@@ -87,13 +91,14 @@
 </div>
 
 <!-- ============ HERO ============ -->
+<main id="main">
 <section class="hero">
   <canvas class="nodes" aria-hidden="true"></canvas>
   <div class="wrap">
     <div class="hero-inner">
-      <p class="eyebrow">Office of the CFO &nbsp;·&nbsp; Office of the CIO</p>
+      <p class="eyebrow"><span style="white-space:nowrap">Office of the CFO</span> &nbsp;·&nbsp; <span style="white-space:nowrap">Office of the CIO</span></p>
       <h1>Financial data and systems, <span class="accent">connected.</span></h1>
-      <p class="sub">Most firms speak to finance or IT. We speak to both, with <em>independent</em> advice on the right EPM platform and the in-house team to select, build, integrate and run it. Fragmented finance data becomes a governed, decision-ready platform you can put AI to work on, responsibly. One partner, from strategy to go-live.</p>
+      <p class="sub">Choosing the right EPM platform is hard when every adviser has a licence to sell. We give you an <em>independent</em> answer, backed by the technical depth to deliver it: SAP, Microsoft data and cloud, and AI, so the platform you pick is one you can actually run.</p>
       <div class="hero-cta">
         <a class="btn btn--onink" href="index.html#contact">Start a conversation <svg class="arw" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
         <a class="btn btn--onink-ghost" href="index.html#services">Explore what we do</a>
@@ -173,7 +178,7 @@
       <a class="card fin reveal" href="cpm-epm-advisory.html">
         <span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 3v18h18"/><path d="M7 14l3-4 3 3 5-7"/></svg></span>
         <h4>CPM / EPM Advisory</h4>
-        <p>Vendor-neutral, product-agnostic platform selection across every leading EPM platform, then delivery through our in-house team and close implementation partners. No referral fees, no vendor bias.</p>
+        <p>Vendor-neutral, product-agnostic platform selection across every leading EPM platform, then delivery led by our senior team, with certified implementation partners where a platform calls for it. No referral fees, no vendor bias.</p>
         <span class="more">Learn more <svg class="arw" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
       </a>
       <a class="card fin reveal" href="sap-epm-consultancy.html">
@@ -228,6 +233,7 @@
           <span class="offer-tags"><span class="pill" style="font-size:.72rem">Fixed scope</span><span class="chip">Fixed fee</span></span>
         </div>
         <h4>EPM Platform Selection Sprint</h4>
+        <p class="offer-dur"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Typical duration: about 4 weeks</p>
         <p class="offer-for">For finance and IT teams choosing or replacing an EPM platform who want an independent answer, not a vendor pitch.</p>
         <ul class="olist">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Requirements captured with finance and IT together</li>
@@ -244,6 +250,7 @@
           <span class="offer-tags"><span class="pill" style="font-size:.72rem">Fixed scope</span><span class="chip">Fixed fee</span></span>
         </div>
         <h4>SAP BPC Health Check &amp; Options Review</h4>
+        <p class="offer-dur"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Typical duration: about 3 weeks</p>
         <p class="offer-for">For SAP BPC teams weighing their next move as SAP steers planning and consolidation toward SAC, Datasphere and Group Reporting.</p>
         <ul class="olist">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Technical health: performance, stability, security and tech debt</li>
@@ -260,6 +267,7 @@
           <span class="offer-tags"><span class="pill" style="font-size:.72rem">Fixed scope</span><span class="chip">Fixed fee</span></span>
         </div>
         <h4>Oracle Hyperion Health Check &amp; Options Review</h4>
+        <p class="offer-dur"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Typical duration: about 3 weeks</p>
         <p class="offer-for">For Oracle Hyperion teams (HFM, Planning, Essbase) weighing the rising cost of staying on-premise against a move to Oracle EPM Cloud or elsewhere.</p>
         <ul class="olist">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Technical health across HFM, Planning and Essbase: stability and tech debt</li>
@@ -276,6 +284,7 @@
           <span class="offer-tags"><span class="pill" style="font-size:.72rem">Fixed scope</span><span class="chip">Fixed fee</span></span>
         </div>
         <h4>Finance Data &amp; Close Diagnostic</h4>
+        <p class="offer-dur"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>Typical duration: about 2 weeks</p>
         <p class="offer-for">For finance leaders fighting a slow close, numbers that don't reconcile, or reporting they can't rely on.</p>
         <ul class="olist">
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6L9 17l-5-5"/></svg>Review of your close, consolidation, data flows and reporting</li>
@@ -325,8 +334,8 @@
   <div class="wrap">
     <div class="section-head reveal">
       <p class="eyebrow">Our method</p>
-      <h2>Selection to go-live, one team</h2>
-      <p class="lede">We run a structured, independent process and stay with you the whole way, so nothing falls through the gap between advice and delivery.</p>
+      <h2>Selection to go-live, senior-led</h2>
+      <p class="lede">We run a structured, independent process with a senior Si BCS lead accountable throughout. SAP work is delivered by our own team; for OneStream, Anaplan and Oracle EPM we bring in certified implementation partners, with us still on point, so nothing falls through the gap between advice and delivery.</p>
     </div>
     <div class="method reveal">
       <div class="phase"><span class="pn"><i>01</i> Select</span><p>Understand your close, planning and reporting, then run a requirements-led selection and a business case your board can defend.</p></div>
@@ -433,13 +442,13 @@
       </div>
       <div class="people reveal">
         <div class="person g">
-          <div class="avatar">SB</div>
+          <div class="avatar photo"><img src="founder-simon.jpg" alt="Simon Bell" width="72" height="72" loading="lazy"></div>
           <h4>Simon Bell</h4>
           <p class="title">Founder &amp; Managing Director</p>
           <p>Thirty years in EPM, from Hyperion to founding Opal Wave, acquired by Sapphire Systems, now part of NTT DATA.</p>
         </div>
         <div class="person">
-          <div class="avatar">AK</div>
+          <div class="avatar photo"><img src="founder-shaam.jpg" alt="Ahtishaam Khan" width="72" height="72" loading="lazy"></div>
           <h4>Ahtishaam Khan</h4>
           <p class="title">Partner &amp; CTO</p>
           <p>Thirty years across enterprise systems, cloud, data and AI, and co-founder of Opal Wave.</p>
@@ -493,6 +502,7 @@
   </div>
 </section>
 
+</main>
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
   <div class="wrap">

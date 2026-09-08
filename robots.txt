@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://deanjohnson-sibcs.github.io/website/sitemap.xml

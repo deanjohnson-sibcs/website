@@ -773,12 +773,11 @@
               </div>
             </div>
           </div>
-
           <form class="form reveal" action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="f00beeed-e9a4-4ed6-8e31-24c250941a0b">
             <div class="field row2">
               <div class="field"><label for="name">Name</label>
-                <input id="full-name" name="full-name" type="text" required placeholder="Your name">
+                <input id="name" name="name" type="text" required placeholder="Your name">
               </div>
               <div class="field"><label for="company">Organisation</label>
                 <input id="company" name="company" type="text" placeholder="Organisation">
@@ -787,7 +786,6 @@
             <div class="field"><label for="email">Work email</label>
               <input id="email" name="email" type="email" required placeholder="you@company.com">
             </div>
-
             <div class="field">
               <label for="service">How can we help?</label>
               <select id="service" name="service">
@@ -804,14 +802,9 @@
                 <option>Other / not sure yet</option>
               </select>
             </div>
-
-            <div class="field"><label for="msg">A little about your project</label><textarea id="msg" name="message"
+            <div class="field"><label for="msg">A little about your project</label><textarea id="message" name="message"
                 placeholder="What are you trying to achieve, and by when?"></textarea></div>
             <button class="btn btn--primary" type="submit" style="justify-content:center">Send message</button>
-            <div id="result"></div>
-            <!-- <p class="form-status" hidden style="font-size:.9rem;color:var(--accent-ink);margin-top:.2rem">Thanks,
-              this is a prototype form. Once live it will deliver straight to info@sibcs.co.uk. For now, please email us
-              directly.</p> -->
           </form>
         </div>
       </div>

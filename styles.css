@@ -656,3 +656,25 @@ table.cmp tr:hover td, table.cmp tr:hover th { background: var(--surface-2); }
 .signal p { color: var(--muted); font-size: .93rem; margin: 0 0 .5rem; }
 .sig-src { display: inline-flex; align-items: center; gap: .3rem; font-family: var(--f-mono); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; color: var(--accent-ink); font-weight: 600; }
 .sig-src svg { width: 12px; height: 12px; }
+
+/* ============================================================
+   Governed AI band (homepage)  —  Si BCS
+   Append this to the END of styles.css. It only ADDS new classes,
+   so it cannot change any existing styling. Uses the site's own
+   tokens (--hero-bg, --on-ink-gold, etc.), so it themes itself in
+   light and dark automatically.
+   ============================================================ */
+.ai-govern{ background:var(--hero-bg); color:var(--hero-text); }
+.ai-govern .eyebrow{ color:var(--on-ink-gold); }
+.ai-govern h2{ color:#fff; max-width:24ch; }
+.ai-govern .lede{ color:var(--hero-muted); max-width:64ch; }
+
+.ai-points{ display:grid; gap:1.1rem; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); margin-top:1.6rem; }
+.ai-point{ border:1px solid var(--hero-border); border-radius:var(--radius-sm); padding:1.1rem; background:rgba(255,255,255,.02); }
+.ai-point .n{ font-family:var(--f-mono); font-size:.72rem; letter-spacing:.08em; color:var(--on-ink-accent); }
+.ai-point h3{ font-size:1.02rem; color:#fff; margin:.35rem 0 .35rem; }
+.ai-point p{ color:var(--hero-muted); font-size:.9rem; }
+
+.ai-govern .proofline{ margin-top:1.5rem; border-left:2px solid var(--on-ink-gold); padding:.3rem 0 .3rem 1rem; color:var(--hero-text); max-width:62ch; }
+.ai-govern .proofline b{ color:#fff; }
+.ai-govern .btn{ margin-top:1.4rem; }
